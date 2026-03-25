@@ -6,6 +6,9 @@
 
 name: RimWorld Mods CI
 
+env:
+  FORCE_COLOR: 1
+
 on:
   push:
     branches:

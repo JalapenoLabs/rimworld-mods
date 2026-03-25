@@ -92,7 +92,9 @@ func discoverMods() ([]string, error) {
 	return mods, nil
 }
 
-// removeFiles deletes all files (not directories) inside dir.
+// removeFiles deletes build-output files inside dir, skipping third-party
+// dependencies. Files prefixed with "0" (e.g. 0Harmony.dll) are bundled
+// external libraries, not build outputs, and must be preserved.
 // Returns nil if the directory does not exist — nothing to clean.
 func removeFiles(dir string) error {
 	entries, err := os.ReadDir(dir)
@@ -103,7 +105,7 @@ func removeFiles(dir string) error {
 		return fmt.Errorf("reading %s: %w", dir, err)
 	}
 	for _, e := range entries {
-		if e.IsDir() {
+		if e.IsDir() || e.Name()[0] == '0' {
 			continue
 		}
 		path := filepath.Join(dir, e.Name())

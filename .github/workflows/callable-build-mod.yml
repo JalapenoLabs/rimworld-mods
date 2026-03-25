@@ -1,12 +1,22 @@
 # Reusable workflow: compile and validate a single RimWorld mod.
 #
-# Called by ci.yml (and can be called by any other workflow) with:
+# Called by main.yml (and can be called by any other workflow) with:
 #   mod:     the subdirectory name under mods/  (e.g. electricity-meter)
 #   version: the RimWorld version folder to validate  (e.g. 1.6)
 #
-# Requires the SSH_PRIVATE_KEY secret so it can check out private submodules.
+# All steps continue on failure so every check always runs and is reported.
+# The final summary step prints a coloured pass/fail table and exits non-zero
+# if anything failed.
 
 name: Build Mod
+
+env:
+  FORCE_COLOR: 1
+  RED: '\033[0;31m'
+  GREEN: '\033[0;32m'
+  YELLOW: '\033[1;33m'
+  BOLD: '\033[1m'
+  NC: '\033[0m'
 
 on:
   workflow_call:
@@ -35,17 +45,25 @@ jobs:
       # ######################### #
 
       - name: Checkout (with submodules)
+        id: checkout
+        continue-on-error: true
         uses: actions/checkout@v4
         with:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           submodules: recursive
 
       - name: Setup .NET
+        id: setup_dotnet
+        continue-on-error: true
+        if: steps.checkout.outcome == 'success'
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
 
       - name: Setup Go
+        id: setup_go
+        continue-on-error: true
+        if: steps.checkout.outcome == 'success'
         uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
@@ -55,6 +73,9 @@ jobs:
       # ######################### #
 
       - name: Build ${{ inputs.mod }}
+        id: build
+        continue-on-error: true
+        if: steps.setup_go.outcome == 'success' && steps.setup_dotnet.outcome == 'success'
         uses: magefile/mage-action@v4
         with:
           version: latest
@@ -65,13 +86,51 @@ jobs:
       # ######################### #
 
       - name: Validate Defs XML
+        id: validate_defs
+        continue-on-error: true
+        if: steps.checkout.outcome == 'success'
         uses: phpcsstandards/xmllint-validate@v1
         with:
           pattern: 'mods/${{ inputs.mod }}/${{ inputs.version }}/Defs/**/*.xml'
           show-in-pr: true
 
       - name: Validate About.xml
+        id: validate_about
+        continue-on-error: true
+        if: steps.checkout.outcome == 'success'
         uses: phpcsstandards/xmllint-validate@v1
         with:
           pattern: 'mods/${{ inputs.mod }}/About/About.xml'
           show-in-pr: true
+
+      # ######################### #
+      #          Summary          #
+      # ######################### #
+
+      - name: Report results
+        if: always()
+        run: |
+          failed=0
+
+          report() {
+            local label="$1"
+            local outcome="$2"
+            case "$outcome" in
+              success) echo -e "  ${GREEN}✔  $label${NC}" ;;
+              skipped) echo -e "  ${YELLOW}—  $label (skipped)${NC}" ;;
+              *)       echo -e "  ${RED}✘  $label${NC}"; failed=1 ;;
+            esac
+          }
+
+          echo ""
+          echo -e "${BOLD}${{ inputs.mod }} @ ${{ inputs.version }}${NC}"
+          echo "────────────────────────────────"
+          report "Checkout"           "${{ steps.checkout.outcome }}"
+          report "Setup .NET"         "${{ steps.setup_dotnet.outcome }}"
+          report "Setup Go"           "${{ steps.setup_go.outcome }}"
+          report "Build"              "${{ steps.build.outcome }}"
+          report "Validate Defs XML"  "${{ steps.validate_defs.outcome }}"
+          report "Validate About.xml" "${{ steps.validate_about.outcome }}"
+          echo ""
+
+          exit $failed
