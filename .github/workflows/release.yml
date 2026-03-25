@@ -92,8 +92,9 @@ jobs:
           cp -r "$VERSION_DIR"         "$RELEASE_DIR/"
 
           # Optional — copy only if present in this mod
-          [ -d "$MOD_DIR/Textures" ] && cp -r "$MOD_DIR/Textures" "$RELEASE_DIR/"
-          [ -f "$MOD_DIR/README.md" ] && cp    "$MOD_DIR/README.md" "$RELEASE_DIR/"
+          [ -d "$MOD_DIR/Textures" ]       && cp -r "$MOD_DIR/Textures"      "$RELEASE_DIR/"
+          [ -f "$MOD_DIR/README.md" ]      && cp    "$MOD_DIR/README.md"     "$RELEASE_DIR/"
+          [ -f "$MOD_DIR/Changelog.txt" ]  && cp    "$MOD_DIR/Changelog.txt" "$RELEASE_DIR/"
 
           echo "Release folder contents:"
           find "$RELEASE_DIR" -type f | sort

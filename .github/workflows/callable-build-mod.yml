@@ -86,6 +86,12 @@ jobs:
       #      Validation Phase     #
       # ######################### #
 
+      - name: Validate mod structure
+        id: validate_structure
+        continue-on-error: true
+        if: steps.checkout.outcome == 'success'
+        run: bash .github/scripts/validate-mod.sh ${{ inputs.mod }}
+
       - name: Install xmllint
         id: install_xmllint
         continue-on-error: true
@@ -139,6 +145,7 @@ jobs:
           report "Setup .NET"         "${{ steps.setup_dotnet.outcome }}"
           report "Setup Go"           "${{ steps.setup_go.outcome }}"
           report "Build"              "${{ steps.build.outcome }}"
+          report "Validate structure"    "${{ steps.validate_structure.outcome }}"
           report "Install xmllint"      "${{ steps.install_xmllint.outcome }}"
           report "Validate XML"        "${{ steps.validate_xml.outcome }}"
           echo ""
