@@ -1,0 +1,80 @@
+# Test workflow: boot RimWorld on a self-hosted runner and verify a mod loads cleanly.
+#
+# Runs on manual dispatch only. Requires a self-hosted Windows 11 runner with RimWorld
+# installed — the runner must have an active desktop session so RimWorld can launch.
+#
+# Claude Code runs the /test-mod skill, which builds the mod, swaps ModsConfig.xml,
+# boots RimWorld, captures the startup log, and restores all state on exit.
+#
+# ── Runner configuration ─────────────────────────────────────────────────────
+# Set RIMWORLD_DIR and RIMWORLD_LOCAL_LOW in the job env block below to match
+# the paths on your self-hosted runner. These are the only two values that are
+# machine-specific.
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: Test Mod
+
+env:
+  FORCE_COLOR: 1
+
+on:
+  workflow_dispatch:
+    inputs:
+      mod:
+        description: 'Mod to test (e.g. fishing-is-fun)'
+        required: true
+        type: string
+
+jobs:
+  test:
+    name: 'test ${{ inputs.mod }}'
+    runs-on: self-hosted   # Windows 11 machine with RimWorld installed
+    timeout-minutes: 15
+    shell: bash
+
+    # ── Runner-specific paths ─────────────────────────────────────────────────
+    # Update these to match the RimWorld install on your self-hosted runner.
+    # All other paths (exe, Mods/, Player.log, ModsConfig.xml) are derived from
+    # these two values by the skill — no further configuration needed.
+    # ─────────────────────────────────────────────────────────────────────────
+    env:
+      RIMWORLD_DIR:       'C:\path\to\RimWorld'                         # ← set for this runner
+      RIMWORLD_LOCAL_LOW: 'C:\Users\YourName\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios'  # ← set for this runner
+
+    steps:
+      # Full recursive checkout so mod files and RimworldForCICD submodule
+      # are both present for the mage build step inside the skill.
+      - name: Checkout (with submodules)
+        uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          submodules: recursive
+
+      # Catch bad inputs before spending time on setup.
+      - name: Validate inputs
+        run: |
+          if [ ! -d "mods/${{ inputs.mod }}" ]; then
+            echo "::error title=Invalid mod::Mod '${{ inputs.mod }}' not found — expected directory: mods/${{ inputs.mod }}"
+            exit 1
+          fi
+
+          echo "✔ mod: ${{ inputs.mod }}"
+
+      # Write the .env file the skill reads for RimWorld paths.
+      # Values come from the job env block above — edit there, not here.
+      - name: Write .env
+        run: |
+          echo "RIMWORLD_DIR=$RIMWORLD_DIR"             > .env
+          echo "RIMWORLD_LOCAL_LOW=$RIMWORLD_LOCAL_LOW" >> .env
+
+      # Install Claude Code CLI if not already cached on the runner.
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      # Run the /test-mod skill non-interactively.
+      # The skill builds the mod, deploys it, boots RimWorld, captures logs,
+      # and restores ModsConfig.xml and the Mods directory on exit.
+      - name: Run /test-mod
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: claude -p --dangerously-skip-permissions "/test-mod ${{ inputs.mod }}"
