@@ -10,9 +10,6 @@
 [submodule "RimworldForCICD"]
 	path = RimworldForCICD
 	url = git@github.com:JalapenoLabs/RimworldForCICD.git
-[submodule "RimworldModToolkit"]
-	path = RimworldModToolkit
-	url = git@github.com:JalapenoLabs/RimworldModToolkit.git
 [submodule "rimworld-mod-llm-auto-translator"]
 	path = rimworld-mod-llm-auto-translator
 	url = git@github.com:JalapenoLabs/rimworld-mod-llm-auto-translator.git
