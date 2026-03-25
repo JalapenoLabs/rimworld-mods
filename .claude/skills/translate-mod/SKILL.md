@@ -1,5 +1,5 @@
 ---
-description: Translate all Defs XML files in a mod to every RimWorld-supported language, writing output to the mod's Languages/ directory.
+description: Translate all Defs XML files in a mod to every RimWorld-supported language, writing output to the mod's Languages/ directory. Preserves existing translations — only fills in missing entries.
 allowed-tools: Glob, Read, Write, Bash
 context: fork
 ---
@@ -9,6 +9,9 @@ context: fork
 Translate all user-facing strings in a mod's Defs XML files into all 29 languages
 supported by RimWorld. Output files are written into the mod's `Languages/` directory
 following RimWorld's DefInjected localization structure.
+
+Existing translation files are respected: only keys that are absent from the existing
+file are translated and appended. Hand-edited translations are never overwritten.
 
 **Usage:** `/translate-mod <mod-name>`
 **Example:** `/translate-mod fishing-is-fun`
@@ -50,14 +53,20 @@ If no source files are found, stop and report it clearly.
 
 ## Step 2 — Translate each file
 
-For each source file discovered:
+For each source file, process all 29 languages before moving to the next file.
 
-1. Read the file contents.
-2. Produce a translation for every supported language (all 29).
-   - **Exception:** For files from `Languages/English/Keyed/`, skip `English` — there is no point translating English into English.
-3. Write each translated file to disk (Step 3).
+**Exception:** For files from `Languages/English/Keyed/`, skip `English` — no point
+translating English into English.
 
-Process one source file at a time. For each file, produce all language outputs before moving to the next.
+For each (source file, language) pair:
+
+1. Determine the output path (see path rules below).
+2. Check whether the output file already exists.
+   - **If it exists:** read it, extract all translation keys already present, and only
+     translate keys that are **missing**. Skip this language entirely if the file is
+     already complete. Merge new entries into the existing file (see Step 3).
+   - **If it does not exist:** translate all keys and write a new file.
+3. Write the result (see Step 3).
 
 ### What to translate
 
@@ -74,8 +83,8 @@ Do **not** reformat the XML or strip comments — translate strings only.
 
 ### Output format
 
-RimWorld's DefInjected format uses `<LanguageData>` with dotted paths to reference the
-original def. The `defName` becomes the root prefix:
+RimWorld's DefInjected format uses `<LanguageData>` with dotted paths referencing
+the original def. The `defName` becomes the root prefix:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -87,7 +96,7 @@ original def. The `defName` becomes the root prefix:
 </LanguageData>
 ```
 
-For Keyed files, the output format mirrors the input key structure but with translated values:
+For Keyed files, mirror the input key structure with translated values:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
@@ -99,7 +108,6 @@ For Keyed files, the output format mirrors the input key structure but with tran
 
 ### Output path rules
 
-The output path is derived from the input path by inserting the language into the hierarchy.
 All paths are relative to `mods/$ARGUMENTS/`.
 
 **Defs files:**
@@ -169,12 +177,19 @@ Reference: https://rimworldwiki.com/wiki/Modding_Tutorials/Localization
 
 ## Step 3 — Write output files
 
-For each translated file:
-- Full output path = `mods/$ARGUMENTS/{output path from Step 2}`
-- Create intermediate directories as needed before writing
-- Write UTF-8, ensure the file ends with a newline
+**New file:** write the full translated `<LanguageData>` block to the output path.
 
-Do not overwrite a file with empty or clearly malformed content — skip and report it instead.
+**Existing file with missing keys:** insert the new `<key>value</key>` entries inside
+the existing `<LanguageData>` block, just before the closing `</LanguageData>` tag.
+Preserve all existing content exactly — spacing, comments, order — untouched.
+
+**Existing file with no missing keys:** skip entirely. Do not write or modify the file.
+
+For all writes:
+- Full output path = `mods/$ARGUMENTS/{output path from Step 2}`
+- Create intermediate directories as needed
+- Write UTF-8, ensure the file ends with a newline
+- Do not write empty or clearly malformed content — skip and report instead
 
 ---
 
@@ -182,5 +197,7 @@ Do not overwrite a file with empty or clearly malformed content — skip and rep
 
 When all files are processed, print a summary:
 - Total source files found
-- Total output files written (source files × languages)
-- Any skipped or failed files with a reason
+- Output files written (new)
+- Output files updated (existing files that had missing keys filled in)
+- Output files skipped (already complete)
+- Any failures with a reason
