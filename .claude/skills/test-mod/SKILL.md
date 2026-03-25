@@ -1,3 +1,9 @@
+---
+description: Build, deploy, and boot-test a mod against a live RimWorld instance. Captures the startup log and restores all state on exit.
+allowed-tools: Bash, Read, Write
+context: fork
+---
+
 # /test-mod
 
 Boot RimWorld with only the target mod active, capture the startup log, then restore everything
