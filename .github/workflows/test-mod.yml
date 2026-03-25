@@ -21,16 +21,15 @@ on:
   workflow_dispatch:
     inputs:
       mod:
-        description: 'Mod to test (e.g. fishing-is-fun)'
+        description: "Mod to test (e.g. fishing-is-fun)"
         required: true
         type: string
 
 jobs:
   test:
-    name: 'test ${{ inputs.mod }}'
-    runs-on: self-hosted   # Windows 11 machine with RimWorld installed
+    name: "test ${{ inputs.mod }}"
+    runs-on: self-hosted # Windows 11 machine with RimWorld installed
     timeout-minutes: 15
-    shell: bash
 
     # ── Runner-specific paths ─────────────────────────────────────────────────
     # Update these to match the RimWorld install on your self-hosted runner.
@@ -38,8 +37,8 @@ jobs:
     # these two values by the skill — no further configuration needed.
     # ─────────────────────────────────────────────────────────────────────────
     env:
-      RIMWORLD_DIR:       'C:\path\to\RimWorld'                         # ← set for this runner
-      RIMWORLD_LOCAL_LOW: 'C:\Users\YourName\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios'  # ← set for this runner
+      RIMWORLD_DIR: 'C:\path\to\RimWorld' # ← set for this runner
+      RIMWORLD_LOCAL_LOW: 'C:\Users\YourName\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios' # ← set for this runner
 
     steps:
       # Full recursive checkout so mod files and RimworldForCICD submodule

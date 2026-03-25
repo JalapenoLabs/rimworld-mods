@@ -52,5 +52,5 @@ while ((Get-Date) -lt $deadline) {
     $elapsed += 2
 }
 
-Write-Error "Timed out after ${TimeoutSecs}s — RimWorld did not finish loading."
+Write-Error "Timed out after ${TimeoutSecs}s - RimWorld did not finish loading."
 exit 1
