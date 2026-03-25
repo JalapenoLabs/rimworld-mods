@@ -98,6 +98,17 @@ jobs:
           echo "Release folder contents:"
           find "$RELEASE_DIR" -type f | sort
 
+      # Stamp About/About.xml with today's date as the modVersion so players
+      # always see a meaningful version number in the mod list.
+      # Format: YYYY.M.D (e.g. 2025.3.24) — no leading zeros, matches the
+      # convention used across all JalapenoLabs mods.
+      - name: Bump modVersion to today's date
+        run: |
+          VERSION=$(date +%Y.%-m.%-d)
+          sed -E -i "s|<modVersion>[^<]+</modVersion>|<modVersion>$VERSION</modVersion>|" "$RELEASE_DIR/About/About.xml"
+          echo "Set modVersion → $VERSION"
+          grep modVersion "$RELEASE_DIR/About/About.xml"
+
       # Zip from inside the release folder so the archive root contains the mod
       # files directly with no wrapping subdirectory.
       - name: Zip release
