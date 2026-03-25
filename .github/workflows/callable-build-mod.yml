@@ -85,13 +85,19 @@ jobs:
       #      Validation Phase     #
       # ######################### #
 
+      - name: Install xmllint
+        id: install_xmllint
+        continue-on-error: true
+        if: steps.checkout.outcome == 'success'
+        run: sudo apt-get install -y libxml2-utils
+
       # Recursively validate every .xml file under the version folder and About/.
       # Uses find + xmllint directly so glob expansion is handled by the shell,
       # not passed as a literal pattern to an action.
       - name: Validate XML
         id: validate_xml
         continue-on-error: true
-        if: steps.checkout.outcome == 'success'
+        if: steps.install_xmllint.outcome == 'success'
         run: |
           errors=0
           while IFS= read -r file; do
@@ -132,6 +138,7 @@ jobs:
           report "Setup .NET"         "${{ steps.setup_dotnet.outcome }}"
           report "Setup Go"           "${{ steps.setup_go.outcome }}"
           report "Build"              "${{ steps.build.outcome }}"
+          report "Install xmllint"      "${{ steps.install_xmllint.outcome }}"
           report "Validate XML"        "${{ steps.validate_xml.outcome }}"
           echo ""
 
