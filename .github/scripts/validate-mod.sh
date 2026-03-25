@@ -93,7 +93,7 @@ require_file      "Changelog.txt"
 require_file      "LICENSE"
 require_file      "About/About.xml"
 require_file      "About/Manifest.xml"
-require_file      "About/ModIcon.png"
+# require_file      "About/ModIcon.png"
 require_file_icase "About" "preview.png" "About/preview.png"
 
 echo ""

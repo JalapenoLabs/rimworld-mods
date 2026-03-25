@@ -20,8 +20,7 @@ tooling that individual mod repos do not need to carry themselves.
 rimworld-mods/
 ├── mods/<mod-name>/           # git submodule for each mod
 ├── RimworldForCICD/           # git submodule — managed DLLs for building
-├── binaries/
-│   └── 0Harmony.dll           # committed third-party library
+├── binaries/                  # committed third-party libraries
 ├── .claude/skills/            # Claude Code slash commands
 ├── .github/workflows/         # GitHub Actions
 ├── legacy/                    # archived scripts (do not rely on)
@@ -56,11 +55,14 @@ Docker daemon that runs on the developer's local machine and monitors the RimWor
 All `mod.csproj` files reference these DLLs at `../../RimworldForCICD/Managed/*.dll` — that
 path resolves to the repo root's `RimworldForCICD/` from `mods/<mod>/`.
 
+There are branches available for different game versions, such as a 1.4, 1.5, and 1.6 branch.
+There's also patch branch versions available too if needed.
+
 ---
 
 ## Mod layout
 
-Each mod submodule follows this structure:
+Each mod submodule follows this general structure:
 
 ```
 mods/<mod-name>/
