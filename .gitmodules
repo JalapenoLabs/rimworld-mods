@@ -1,0 +1,18 @@
+[submodule "mods/project-zero-dawn"]
+	path = mods/project-zero-dawn
+	url = git@github.com:JalapenoLabs/rimworld-project-zero-dawn.git
+[submodule "mods/electricity-meter"]
+	path = mods/electricity-meter
+	url = git@github.com:JalapenoLabs/rimworld-electricity-meter.git
+[submodule "mods/fishing-is-fun"]
+	path = mods/fishing-is-fun
+	url = git@github.com:JalapenoLabs/rimworld-fishing-is-fun.git
+[submodule "RimworldForCICD"]
+	path = RimworldForCICD
+	url = git@github.com:JalapenoLabs/RimworldForCICD.git
+[submodule "RimworldModToolkit"]
+	path = RimworldModToolkit
+	url = git@github.com:JalapenoLabs/RimworldModToolkit.git
+[submodule "rimworld-mod-llm-auto-translator"]
+	path = rimworld-mod-llm-auto-translator
+	url = git@github.com:JalapenoLabs/rimworld-mod-llm-auto-translator.git

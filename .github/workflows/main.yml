@@ -1,0 +1,34 @@
+# Root CI: builds and validates every mod in the monorepo.
+#
+# Uses a matrix to fan out to the reusable build-mod workflow once per mod.
+# To add a new mod, append its directory name to the mod matrix below.
+# To support a new RimWorld version, append it to the version matrix.
+
+name: RimWorld Mods CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: '${{ matrix.mod }} @ ${{ matrix.version }}'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - mod: electricity-meter
+            version: '1.6'
+          - mod: fishing-is-fun
+            version: '1.6'
+          - mod: project-zero-dawn
+            version: '1.6'
+    uses: ./.github/workflows/callable-build-mod.yml
+    with:
+      mod: ${{ matrix.mod }}
+      version: ${{ matrix.version }}
+    secrets:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}

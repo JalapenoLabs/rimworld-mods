@@ -1,0 +1,77 @@
+# Reusable workflow: compile and validate a single RimWorld mod.
+#
+# Called by ci.yml (and can be called by any other workflow) with:
+#   mod:     the subdirectory name under mods/  (e.g. electricity-meter)
+#   version: the RimWorld version folder to validate  (e.g. 1.6)
+#
+# Requires the SSH_PRIVATE_KEY secret so it can check out private submodules.
+
+name: Build Mod
+
+on:
+  workflow_call:
+    inputs:
+      mod:
+        description: 'Mod directory name under mods/ (e.g. electricity-meter)'
+        required: true
+        type: string
+      version:
+        description: 'RimWorld version folder to validate (e.g. 1.6)'
+        required: false
+        type: string
+        default: '1.6'
+    secrets:
+      SSH_PRIVATE_KEY:
+        required: true
+
+jobs:
+  build:
+    name: '${{ inputs.mod }} @ ${{ inputs.version }}'
+    runs-on: ubuntu-latest
+
+    steps:
+      # ######################### #
+      #        Setup Phase        #
+      # ######################### #
+
+      - name: Checkout (with submodules)
+        uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          submodules: recursive
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+
+      - name: Install Mage
+        run: go install github.com/magefile/mage/mage@latest
+
+      # ######################### #
+      #        Build Phase        #
+      # ######################### #
+
+      - name: Build ${{ inputs.mod }}
+        run: mage build ${{ inputs.mod }}
+
+      # ######################### #
+      #      Validation Phase     #
+      # ######################### #
+
+      - name: Validate Defs XML
+        uses: phpcsstandards/xmllint-validate@v1
+        with:
+          pattern: 'mods/${{ inputs.mod }}/${{ inputs.version }}/Defs/**/*.xml'
+          show-in-pr: true
+
+      - name: Validate About.xml
+        uses: phpcsstandards/xmllint-validate@v1
+        with:
+          pattern: 'mods/${{ inputs.mod }}/About/About.xml'
+          show-in-pr: true
