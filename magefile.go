@@ -33,7 +33,7 @@ func Build(mod string) error {
 	}
 
 	fmt.Printf("Building %s...\n", mod)
-	return sh.Run("dotnet", "build", csproj)
+	return sh.RunV("dotnet", "build", csproj)
 }
 
 // BuildAll compiles every mod found under mods/.

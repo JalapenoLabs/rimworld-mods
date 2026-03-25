@@ -4,9 +4,9 @@
 # package job only proceeds if the build and all checks pass.
 #
 # The release folder is assembled carefully: ONLY the files explicitly copied
-# below will end up in the zip, and therefore on Steam. Do not add anything
-# that should not be public or distributed (source code, CI configs, editor
-# files, etc.). When in doubt, leave it out.
+# in the "Assemble release folder" step will end up in the zip, and therefore
+# on Steam. Do not add anything that should not be public or distributed
+# (source code, CI configs, editor files, etc.). When in doubt, leave it out.
 
 name: Release Mod
 
@@ -42,22 +42,26 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
 
+    env:
+      MOD_DIR: mods/${{ inputs.mod }}
+      VERSION_DIR: mods/${{ inputs.mod }}/${{ inputs.version }}
+      RELEASE_DIR: mods/${{ inputs.mod }}/release
+      ZIP_NAME: ${{ inputs.mod }}-${{ inputs.version }}.zip
+
     steps:
+      # Full recursive checkout is required so the mod files and RimworldForCICD
+      # submodule are both present for the build and packaging steps.
       - name: Checkout (with submodules)
         uses: actions/checkout@v4
         with:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           submodules: recursive
 
-      # ######################### #
-      #    Validate User Inputs   #
-      # ######################### #
-
+      # Catch bad inputs early before any file work begins.
+      # Fails with a descriptive error if the mod directory or version folder
+      # don't exist in the repository.
       - name: Validate inputs
         run: |
-          MOD_DIR="mods/${{ inputs.mod }}"
-          VERSION_DIR="$MOD_DIR/${{ inputs.version }}"
-
           if [ ! -d "$MOD_DIR" ]; then
             echo "::error title=Invalid mod::Mod '${{ inputs.mod }}' not found — expected directory: $MOD_DIR"
             exit 1
@@ -71,52 +75,43 @@ jobs:
           echo "✔ mod:     ${{ inputs.mod }}"
           echo "✔ version: ${{ inputs.version }}"
 
-      # ######################### #
-      #     Assemble Release      #
-      # ######################### #
-
+      # Wipe and rebuild the release folder from scratch so no leftover files
+      # from a previous run can sneak into the archive.
+      #
+      # ── Files copied here go directly to Steam. ─────────────────────────────
+      # Add or remove entries below with care. Never include: source code,
+      # mod.csproj, Makefile, .github/, .vscode/, or any editor/CI config.
+      # ────────────────────────────────────────────────────────────────────────
       - name: Assemble release folder
         run: |
-          MOD_DIR="mods/${{ inputs.mod }}"
-          RELEASE_DIR="$MOD_DIR/release"
-
-          # Wipe and recreate so no leftover files from a previous run sneak in.
           rm -rf "$RELEASE_DIR"
           mkdir -p "$RELEASE_DIR"
 
-          # ── Files copied to the release folder go directly to Steam. ────────
-          # Add or remove entries here with care. Never include: source code,
-          # mod.csproj, Makefile, .github/, .vscode/, or any editor/CI config.
-          # ────────────────────────────────────────────────────────────────────
-          cp -r "$MOD_DIR/About"                 "$RELEASE_DIR/"
-          cp -r "$MOD_DIR/${{ inputs.version }}" "$RELEASE_DIR/"
+          cp -r "$MOD_DIR/About"       "$RELEASE_DIR/"
+          cp -r "$VERSION_DIR"         "$RELEASE_DIR/"
 
-          # Optional — copy only if present
+          # Optional — copy only if present in this mod
           [ -d "$MOD_DIR/Textures" ] && cp -r "$MOD_DIR/Textures" "$RELEASE_DIR/"
           [ -f "$MOD_DIR/README.md" ] && cp    "$MOD_DIR/README.md" "$RELEASE_DIR/"
 
           echo "Release folder contents:"
           find "$RELEASE_DIR" -type f | sort
 
-      # ######################### #
-      #          Package          #
-      # ######################### #
-
+      # Zip from inside the release folder so the archive root contains the mod
+      # files directly with no wrapping subdirectory.
       - name: Zip release
         run: |
-          ZIP_NAME="${{ inputs.mod }}-${{ inputs.version }}.zip"
-
-          # Zip from inside the release folder so the archive contains files
-          # at its root with no wrapping subdirectory.
-          cd "mods/${{ inputs.mod }}/release"
+          cd "$RELEASE_DIR"
           zip -r "$GITHUB_WORKSPACE/$ZIP_NAME" .
 
           echo "Created: $ZIP_NAME"
           unzip -l "$GITHUB_WORKSPACE/$ZIP_NAME"
 
+      # Upload the zip as a downloadable artifact on this workflow run.
+      # This is the file that gets handed off to Steam Workshop publishing.
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: '${{ inputs.mod }}-${{ inputs.version }}'
-          path: '${{ inputs.mod }}-${{ inputs.version }}.zip'
+          name: ${{ env.ZIP_NAME }}
+          path: ${{ env.ZIP_NAME }}
           if-no-files-found: error

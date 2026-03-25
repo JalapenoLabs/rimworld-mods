@@ -85,23 +85,26 @@ jobs:
       #      Validation Phase     #
       # ######################### #
 
-      - name: Validate Defs XML
-        id: validate_defs
+      # Recursively validate every .xml file under the version folder and About/.
+      # Uses find + xmllint directly so glob expansion is handled by the shell,
+      # not passed as a literal pattern to an action.
+      - name: Validate XML
+        id: validate_xml
         continue-on-error: true
         if: steps.checkout.outcome == 'success'
-        uses: phpcsstandards/xmllint-validate@v1
-        with:
-          pattern: 'mods/${{ inputs.mod }}/${{ inputs.version }}/Defs/**/*.xml'
-          show-in-pr: true
-
-      - name: Validate About.xml
-        id: validate_about
-        continue-on-error: true
-        if: steps.checkout.outcome == 'success'
-        uses: phpcsstandards/xmllint-validate@v1
-        with:
-          pattern: 'mods/${{ inputs.mod }}/About/About.xml'
-          show-in-pr: true
+        run: |
+          errors=0
+          while IFS= read -r file; do
+            if xmllint --noout "$file" 2>&1; then
+              echo "  ✔ $file"
+            else
+              errors=$((errors + 1))
+            fi
+          done < <(find \
+            "mods/${{ inputs.mod }}/${{ inputs.version }}" \
+            "mods/${{ inputs.mod }}/About" \
+            -name "*.xml" | sort)
+          exit $errors
 
       # ######################### #
       #          Summary          #
@@ -129,8 +132,7 @@ jobs:
           report "Setup .NET"         "${{ steps.setup_dotnet.outcome }}"
           report "Setup Go"           "${{ steps.setup_go.outcome }}"
           report "Build"              "${{ steps.build.outcome }}"
-          report "Validate Defs XML"  "${{ steps.validate_defs.outcome }}"
-          report "Validate About.xml" "${{ steps.validate_about.outcome }}"
+          report "Validate XML"        "${{ steps.validate_xml.outcome }}"
           echo ""
 
           exit $failed
