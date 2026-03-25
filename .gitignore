@@ -21,6 +21,9 @@ workshop_build.vdf
 .env.*
 !.env.example
 
+# ── Local test output ─────────────────────────────────────────────────────────
+dev.log
+
 # ── OS-specific ───────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
