@@ -50,15 +50,15 @@ jobs:
         with:
           go-version-file: go.mod
 
-      - name: Install Mage
-        run: go install github.com/magefile/mage/mage@latest
-
       # ######################### #
       #        Build Phase        #
       # ######################### #
 
       - name: Build ${{ inputs.mod }}
-        run: mage build ${{ inputs.mod }}
+        uses: magefile/mage-action@v4
+        with:
+          version: latest
+          args: build ${{ inputs.mod }}
 
       # ######################### #
       #      Validation Phase     #
