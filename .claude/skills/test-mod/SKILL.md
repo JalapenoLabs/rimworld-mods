@@ -29,12 +29,13 @@ Extract these two keys:
 | Key | Description |
 |-----|-------------|
 | `RIMWORLD_DIR` | Base path to the RimWorld install (e.g. `E:\SteamLibrary\steamapps\common\RimWorld`) |
-| `RIMWORLD_LOG_FILE` | Full path to `Player.log` in AppData |
+| `RIMWORLD_LOCAL_LOW` | Path to the RimWorld AppData folder (e.g. `C:\Users\adnav\AppData\LocalLow\Ludeon Studios\RimWorld by Ludeon Studios`) |
 
 Derive the rest — no conversion needed, PowerShell handles Windows paths natively:
 - `RIMWORLD_EXE` = `$RIMWORLD_DIR\RimWorldWin64.exe`
 - `RIMWORLD_MODS_DIR` = `$RIMWORLD_DIR\Mods`
-- `RIMWORLD_MODS_CONFIG` = `$RIMWORLD_DIR\ModsConfig.xml`
+- `RIMWORLD_MODS_CONFIG` = `$RIMWORLD_LOCAL_LOW\Config\ModsConfig.xml`
+- `RIMWORLD_LOG_FILE` = `$RIMWORLD_LOCAL_LOW\Player.log`
 
 If any key is missing or a derived path does not exist, stop with a descriptive error.
 
