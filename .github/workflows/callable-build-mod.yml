@@ -26,7 +26,7 @@ on:
 
 jobs:
   build:
-    name: '${{ inputs.mod }} @ ${{ inputs.version }}'
+    name: build
     runs-on: ubuntu-latest
 
     steps:
