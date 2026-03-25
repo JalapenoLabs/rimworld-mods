@@ -1,0 +1,25 @@
+# ── Dotnet build artifacts ────────────────────────────────────────────────────
+**/obj/
+**/bin/
+**/*.sln
+
+# ── Mage local binary cache ───────────────────────────────────────────────────
+.mage/
+
+# ── Release staging (created by the release CI workflow, never committed) ─────
+mods/*/release/
+
+# ── Local zip artifacts from release runs ─────────────────────────────────────
+*.zip
+
+# ── Legacy Steam Workshop publish artifacts ───────────────────────────────────
+workshop/
+workshop_build.vdf
+
+# ── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+
+# ── OS-specific ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
