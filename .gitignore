@@ -24,6 +24,9 @@ workshop_build.vdf
 # ── Local test output ─────────────────────────────────────────────────────────
 dev.log
 
+# ── Design tool lock files ────────────────────────────────────────────────────
+*.afdesign~lock~
+
 # ── OS-specific ───────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
