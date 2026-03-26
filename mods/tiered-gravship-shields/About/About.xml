@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Tiered Gravship Shields</name>
+  <author>JalapenoLabs</author>
+  <packageId>jalapenolabs.rimworld.tieredgravshipshields</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Adds tier 2 and tier 3 gravship shield generators — more powerful upgrades for your gravship's defensive systems. The vanilla shield generator becomes tier 1. Tier 2 has twice the shield capacity and tier 3 has four times, at the cost of proportionally higher power draw.\n\nHigher-tier shields are obtainable only as rare quest rewards.</description>
+  <url>https://github.com/JalapenoLabs/rimworld-tiered-gravship-shields</url>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Odyssey</packageId>
+      <displayName>Odyssey</displayName>
+      <steamWorkshopUrl>
+        https://store.steampowered.com/app/3022790/RimWorld__Odyssey/?curator_clanid=25160263
+      </steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld.Odyssey</li>
+  </loadAfter>
+</ModMetaData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Rename the vanilla shield generator to "tier 1" so all three tiers are clearly distinct. -->
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="GravshipShieldGenerator"]/label</xpath>
+    <value>
+      <label>gravship shield generator (tier 1)</label>
+    </value>
+  </Operation>
+
+</Patch>

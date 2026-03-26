@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>jalapenolabs.rimworld.tieredgravshipshields</identifier>
+  <version>0.0.1</version>
+  <targetVersions>
+    <li>1.6.0</li>
+  </targetVersions>
+  <dependencies>
+    <li>Ludeon.RimWorld.Odyssey</li>
+  </dependencies>
+  <incompatibleWith>
+  </incompatibleWith>
+  <loadBefore>
+  </loadBefore>
+  <loadAfter>
+    <li>Ludeon.RimWorld.Odyssey</li>
+  </loadAfter>
+  <manifestUri>https://raw.githubusercontent.com/JalapenoLabs/rimworld-tiered-gravship-shields/main/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/JalapenoLabs/rimworld-tiered-gravship-shields/releases/latest</downloadUri>
+</Manifest>

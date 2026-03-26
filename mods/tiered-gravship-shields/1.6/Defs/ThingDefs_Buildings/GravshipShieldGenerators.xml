@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ─────────────────────────────────────────────────────────────────────
+       Tier 2 — twice the shield HP and power draw of the vanilla tier 1.
+       Only obtainable as a quest/trade reward (tradeTags: GravshipUpgrade).
+       ───────────────────────────────────────────────────────────────────── -->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>GravshipShieldGeneratorT2</defName>
+    <label>gravship shield generator (tier 2)</label>
+    <description>An advanced gravship shielding device with twice the shield capacity of the standard model. Its reinforced grav-field projectors sustain heavier impacts before collapsing. Those inside can still shoot out.\n\nIt must be charged before use. Only obtainable as a rare salvage or quest reward. One gravship can support two gravship shield generators of any tier.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/GravshipShieldGeneratorT2</texPath>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Mass>100</Mass>
+    </statBases>
+    <size>(3, 3)</size>
+    <fillPercent>0.6</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+    <specialDisplayRadius>24.9</specialDisplayRadius>
+    <comps>
+      <li Class="CompProperties_GravshipFacility">
+        <requiresLOS>false</requiresLOS>
+        <maxSimultaneous>2</maxSimultaneous>
+        <maxDistance>500</maxDistance>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <!-- 2x the tier 1 power draw of 200W -->
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Interactable">
+        <compClass>CompInteractable_GravshipShieldGenerator</compClass>
+        <ticksToActivate>120</ticksToActivate>
+        <jobString>activate</jobString>
+        <activateTexPath>UI/Commands/ActivateGravshipShield</activateTexPath>
+        <soundActivate>GravshipShieldGenerator_Activate</soundActivate>
+        <requiresPower>false</requiresPower>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <compClass>CompGravshipShieldGenerator</compClass>
+        <radius>24.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <interceptAirProjectiles>true</interceptAirProjectiles>
+        <!-- Blue tint to visually distinguish from tier 1 (gray) -->
+        <color>(0.2, 0.4, 0.8)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <!-- 2x tier 1 shield HP of 500 -->
+        <hitPoints>1000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>false</hitPointsRestoreInstantlyAfterCharge>
+        <startWithMaxHitPoints>false</startWithMaxHitPoints>
+        <chargeDurationTicks>10000</chargeDurationTicks><!-- 4 hours -->
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>GravshipShieldTip</gizmoTipKey>
+        <alwaysShowHitpointsGizmo>true</alwaysShowHitpointsGizmo>
+        <rechargeHitPointsIntervalTicks>75</rechargeHitPointsIntervalTicks>
+        <activated>true</activated>
+        <activeDuration>6000</activeDuration><!-- 100 seconds -->
+      </li>
+    </comps>
+    <tradeTags>
+      <li>GravshipUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+
+  <!-- ─────────────────────────────────────────────────────────────────────
+       Tier 3 — four times the shield HP and power draw of the vanilla tier 1.
+       Only obtainable as a quest/trade reward (tradeTags: GravshipUpgrade).
+       ───────────────────────────────────────────────────────────────────── -->
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>GravshipShieldGeneratorT3</defName>
+    <label>gravship shield generator (tier 3)</label>
+    <description>A tier 3 gravship shield generator — the pinnacle of portable grav-field shielding technology. It can absorb four times the punishment of a standard model before failing. Those inside can still shoot out.\n\nIt must be charged before use. Only obtainable as an exceptionally rare quest reward. One gravship can support two gravship shield generators of any tier.</description>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/GravshipShieldGeneratorT3</texPath>
+      <drawSize>(3, 3)</drawSize>
+    </graphicData>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <tickerType>Normal</tickerType>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Mass>120</Mass>
+    </statBases>
+    <size>(3, 3)</size>
+    <fillPercent>0.6</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>20</pathCost>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+    <specialDisplayRadius>24.9</specialDisplayRadius>
+    <comps>
+      <li Class="CompProperties_GravshipFacility">
+        <requiresLOS>false</requiresLOS>
+        <maxSimultaneous>2</maxSimultaneous>
+        <maxDistance>500</maxDistance>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <!-- 4x the tier 1 power draw of 200W -->
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Interactable">
+        <compClass>CompInteractable_GravshipShieldGenerator</compClass>
+        <ticksToActivate>120</ticksToActivate>
+        <jobString>activate</jobString>
+        <activateTexPath>UI/Commands/ActivateGravshipShield</activateTexPath>
+        <soundActivate>GravshipShieldGenerator_Activate</soundActivate>
+        <requiresPower>false</requiresPower>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+      <li Class="CompProperties_ProjectileInterceptor">
+        <compClass>CompGravshipShieldGenerator</compClass>
+        <radius>24.9</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <interceptAirProjectiles>true</interceptAirProjectiles>
+        <!-- Amber tint to visually distinguish from tier 1 (gray) and tier 2 (blue) -->
+        <color>(0.8, 0.6, 0.1)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <!-- 4x tier 1 shield HP of 500 -->
+        <hitPoints>2000</hitPoints>
+        <hitPointsRestoreInstantlyAfterCharge>false</hitPointsRestoreInstantlyAfterCharge>
+        <startWithMaxHitPoints>false</startWithMaxHitPoints>
+        <chargeDurationTicks>10000</chargeDurationTicks><!-- 4 hours -->
+        <minIdleAlpha>0.2</minIdleAlpha>
+        <drawWithNoSelection>True</drawWithNoSelection>
+        <disarmedByEmpForTicks>1500</disarmedByEmpForTicks>
+        <gizmoTipKey>GravshipShieldTip</gizmoTipKey>
+        <alwaysShowHitpointsGizmo>true</alwaysShowHitpointsGizmo>
+        <rechargeHitPointsIntervalTicks>75</rechargeHitPointsIntervalTicks>
+        <activated>true</activated>
+        <activeDuration>6000</activeDuration><!-- 100 seconds -->
+      </li>
+    </comps>
+    <tradeTags>
+      <li>GravshipUpgrade</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>
