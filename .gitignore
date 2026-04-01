@@ -11,6 +11,7 @@ mods/*/release/
 
 # ── Local zip artifacts from release runs ─────────────────────────────────────
 *.zip
+!.vscode/template.zip
 
 # ── Legacy Steam Workshop publish artifacts ───────────────────────────────────
 workshop/
