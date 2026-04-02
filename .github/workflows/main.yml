@@ -1,8 +1,7 @@
 # Root CI: builds and validates every mod in the monorepo.
 #
-# Uses a matrix to fan out to the reusable build-mod workflow once per mod.
-# To add a new mod, append its directory name to the mod matrix below.
-# To support a new RimWorld version, append it to the version matrix.
+# A prior "discover" job scans mods/ and emits the matrix dynamically, so
+# adding a new mod folder is all that's needed — no workflow edits required.
 
 name: RimWorld Mods CI
 
@@ -17,18 +16,29 @@ on:
   workflow_dispatch:
 
 jobs:
+  discover:
+    name: Discover mods
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.scan.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Emit a JSON array of {mod, version} objects — one entry per subdirectory
+      # of mods/. All mods target 1.6; extend here if per-mod versions are needed.
+      - name: Scan mods/ directory
+        id: scan
+        run: |
+          matrix=$(ls mods/ | jq -R '{"mod": ., "version": "1.6"}' | jq -sc '.')
+          echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
+
   build:
     name: '${{ matrix.mod }} @ ${{ matrix.version }}'
+    needs: discover
     strategy:
       fail-fast: false
       matrix:
-        include:
-          - mod: electricity-meter
-            version: '1.6'
-          - mod: fishing-is-fun
-            version: '1.6'
-          - mod: project-zero-dawn
-            version: '1.6'
+        include: ${{ fromJson(needs.discover.outputs.matrix) }}
     uses: ./.github/workflows/callable-build-mod.yml
     with:
       mod: ${{ matrix.mod }}
