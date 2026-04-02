@@ -70,7 +70,7 @@ public static class LimbUtility
             return false;
         }
 
-        BodyPartRecord jaw = pawn.RaceProps?.body?.AllParts?.FirstOrDefault(part => part.def == BodyPartDefOf.Jaw);
+        BodyPartRecord jaw = pawn.RaceProps?.body?.AllParts?.FirstOrDefault(part => part.def?.defName == "Jaw");
         if (jaw == null)
         {
             return false;
