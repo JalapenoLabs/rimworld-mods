@@ -12,6 +12,9 @@
 		<!-- Do not generate pdb file -->
 		<DebugType>none</DebugType>
 
+		<!-- net480 defaults to C# 7.3; override to allow modern syntax -->
+		<LangVersion>latest</LangVersion>
+
 		<DebugSymbols>false</DebugSymbols>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
