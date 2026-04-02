@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Anomaly Amputation</name>
+	<author>JalapenoLabs (adapted)</author>
+	<modVersion>2025.10.30</modVersion>
+
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<modDependenciesByVersion>
+		<v1.6>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+			</li>
+		</v1.6>
+	</modDependenciesByVersion>
+
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+	</loadAfter>
+
+	<packageId>jalapenolabs.rimworld.anomalyamputate</packageId>
+	<url>https://github.com/JalapenoLabs/rimworld-anomaly-amputate</url>
+	<description>Adapt anomaly containment to your needs by surgically disarming captured entities.
+
+This mod allows gorehulks held on a containment platform to receive standard medical bills so you can amputate specific limbs. Removing limbs increases containment reliability and slows their resource output.
+
+Work in progress prototype derived from the Electricity Meter infrastructure.</description>
+</ModMetaData>

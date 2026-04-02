@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AnomalyAmputation_ContainmentReduction>Containment requirement reduced by {1} (amputated limbs: {0})</AnomalyAmputation_ContainmentReduction>
+  <AnomalyAmputation_StudyPenalty>Amputated limbs ({0}) apply a x{1} knowledge multiplier (original: {2})</AnomalyAmputation_StudyPenalty>
+  <AnomalyAmputation_NoLegs>Immobilized: no legs remaining</AnomalyAmputation_NoLegs>
+  <AnomalyAmputation_Disarmed>Cannot launch spines without arms or a jaw</AnomalyAmputation_Disarmed>
+
+</LanguageData>
