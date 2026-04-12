@@ -10,3 +10,6 @@
 [submodule "RimworldForCICD"]
 	path = RimworldForCICD
 	url = git@github.com:JalapenoLabs/RimworldForCICD.git
+[submodule "mods/lava-power-pumps"]
+	path = mods/lava-power-pumps
+	url = git@github.com:JalapenoLabs/rimworld-lava-power-pumps.git
