@@ -1,0 +1,3 @@
+# Changelog
+
+2026.4.26 - Initial release. Adds the colonist bar's mood color band to pawn portraits in the Begin Ritual dialog (Ideology, Anomaly, Odyssey gravship launches).

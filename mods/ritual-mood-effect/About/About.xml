@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Ritual Mood Effect</name>
+	<author>JalapenoLabs</author>
+	<modVersion>2026.4.26</modVersion>
+
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<modDependenciesByVersion>
+		<v1.6>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+			</li>
+		</v1.6>
+	</modDependenciesByVersion>
+
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+	</loadAfter>
+
+	<packageId>jalapenolabs.rimworld.ritualmoodeffect</packageId>
+	<url>https://github.com/JalapenoLabs/rimworld-ritual-mood-effect</url>
+	<description>Adds the colonist bar's mood / break-risk color band to colonist portraits inside the standard Begin Ritual dialog.
+
+The vanilla colonist bar at the top of the screen tints each portrait gold, orange, or pulsing red when a colonist is at minor, major, or extreme mental break risk. The Begin Ritual dialog (used by Ideology rituals, Anomaly psychic rituals, and Odyssey gravship launches) draws its own portraits and omits this cue, making it easy to assign someone who is one bad thought away from snapping.
+
+This mod restores parity by overlaying the same color band on every pawn portrait inside that dialog. It uses the game's own MoodThreshold helpers, so the colors are identical to the topbar and respect the vanilla "Show mood on portraits" preference.
+
+No new content. No defs. Pure Harmony patch. Safe to add or remove mid-save.</description>
+</ModMetaData>
