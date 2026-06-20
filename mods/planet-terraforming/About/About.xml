@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Terraformation</name>
+  <author>JalapenoLabs</author>
+  <packageId>jalapenolabs.rimworld.terraformation</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Land on a dead, airless, lethally cold red planet and terraform it back to a living world. Inspired by The Planet Crafter, you build and power terraforming machines to raise a global Terraformation Index across four lanes: Oxygen, Heat, Pressure, and Biomass. As the index climbs through fifteen phases, the sky turns blue, water and rain return, soil and forests grow, wildlife and people repopulate, and the world becomes fully habitable. Survival begins with vacsuits and pressurized oxygenated rooms; it ends with a green, breathable home. Requires the Odyssey DLC.</description>
+  <url>https://github.com/JalapenoLabs/rimworld-planet-terraforming</url>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Odyssey</packageId>
+      <displayName>Odyssey</displayName>
+      <steamWorkshopUrl>
+        https://store.steampowered.com/app/3022790/RimWorld__Odyssey/?curator_clanid=25160263
+      </steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld.Odyssey</li>
+  </loadAfter>
+</ModMetaData>

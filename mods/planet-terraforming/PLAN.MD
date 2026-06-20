@@ -35,7 +35,8 @@ that *feels* like Planet Crafter.
 - **Requires:** RimWorld Core + **Odyssey DLC** (hard dependency). We reuse Odyssey's vacsuit
   apparel and the `VacuumResistance` stat.
 - **Target version:** 1.6 (folder `1.6/`). Targets `net480`, builds via the repo's Mage toolchain.
-- **Identity:** display name **"Terraformation"**, `packageId` **`JalapenoLabs.Terraformation`**,
+- **Identity:** display name **"Terraformation"**, `packageId` **`jalapenolabs.rimworld.terraformation`**
+  (lowercase, matching the repo convention like `jalapenolabs.rimworld.lavapowerpumps`),
   shipped as a git submodule like the repo's other mods.
 - **Engine reality checks** (from implementation research, all confirmed against decompiled source):
   - Planet-surface maps are **always force-pressurized**; Odyssey vacuum exists only on space-layer
