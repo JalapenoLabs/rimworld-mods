@@ -118,6 +118,11 @@
     <minQuality>0</minQuality>
     <maxQuality>0.25</maxQuality>
     <warnOnLowQuality>false</warnOnLowQuality>
+    <!-- The quality number IS the break chance, so the vanilla normalized
+         outcome-chance table would contradict it; the worker owns the roll and
+         writes its own letter. An empty outcomeChances list also suppresses the
+         development-point rewards block. -->
+    <givesDevelopmentPoints>false</givesDevelopmentPoints>
     <comps>
       <li Class="RitualOutcomeComp_PawnStatScaled">
         <label>speaker's social impact</label>
@@ -175,26 +180,12 @@
         <curve>
           <points>
             <li>(0, 0.0)</li>
-            <li>(0.5, 0.02)</li>
-            <li>(1.0, 0.04)</li>
+            <li>(50, 0.02)</li>
+            <li>(100, 0.04)</li>
           </points>
         </curve>
       </li>
     </comps>
-    <outcomeChances>
-      <li>
-        <label>loyalty unshaken</label>
-        <chance>0.75</chance>
-        <description>The ceremony failed. The prisoner clung to their faction, more resentful than before.</description>
-        <positivityIndex>-1</positivityIndex>
-      </li>
-      <li>
-        <label>loyalty broken</label>
-        <chance>0.25</chance>
-        <description>Something gave way. The prisoner's unwavering devotion cracked, and they can now be recruited.</description>
-        <positivityIndex>1</positivityIndex>
-      </li>
-    </outcomeChances>
   </RitualOutcomeEffectDef>
 
 </Defs>

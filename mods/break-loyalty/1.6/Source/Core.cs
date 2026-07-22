@@ -16,6 +16,10 @@ namespace BreakLoyalty;
 /// Strongly typed references to defs this mod declares in XML.
 [DefOf]
 public static class BreakLoyaltyDefOf {
+    /// The ceremony precept, present on every ideoligion (it is `classic`).
+    /// Used to open the ritual dialog directly from a prisoner.
+    public static PreceptDef BreakLoyalty;
+
     /// Stacking negative memory applied to a prisoner each time a ceremony fails.
     /// Cleared when a later ceremony succeeds.
     public static ThoughtDef BreakLoyalty_FailedCeremony;

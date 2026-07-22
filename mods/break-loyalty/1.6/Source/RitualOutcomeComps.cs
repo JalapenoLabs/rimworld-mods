@@ -92,13 +92,15 @@ public class RitualOutcomeComp_TargetColonyBonds : RitualOutcomeComp_BreakLoyalt
 }
 
 /// The prisoner's contentment. A prisoner treated well is more persuadable than
-/// a miserable one. Metric is current mood as a 0..1 fraction.
+/// a miserable one. Metric is current mood as whole percentage points (0..100),
+/// kept integer so both the prediction panel and the result letter read cleanly.
 public class RitualOutcomeComp_TargetContentment : RitualOutcomeComp_BreakLoyaltyTarget {
     protected override float MetricFor(Pawn subject) {
-        return subject.needs?.mood?.CurLevelPercentage ?? 0.5f;
+        float mood = subject.needs?.mood?.CurLevelPercentage ?? 0.5f;
+        return Mathf.Round(mood * 100f);
     }
 
     protected override string CountLabel(Pawn subject, float metric) {
-        return metric.ToStringPercent();
+        return Mathf.RoundToInt(metric) + "%";
     }
 }

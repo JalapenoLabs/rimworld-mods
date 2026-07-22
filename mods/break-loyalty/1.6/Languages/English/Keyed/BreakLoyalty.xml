@@ -5,4 +5,16 @@
   <BreakLoyalty.RoleReason.MustBePrisoner>Must be a prisoner of the colony.</BreakLoyalty.RoleReason.MustBePrisoner>
   <BreakLoyalty.RoleReason.MustBeUnwavering>Must be an unwaveringly loyal prisoner.</BreakLoyalty.RoleReason.MustBeUnwavering>
 
+  <!-- Relabels the dialog's headline quality number to what it means here. -->
+  <BreakLoyalty.ChanceLabel>Chance to break loyalty</BreakLoyalty.ChanceLabel>
+
+  <!-- Right-click option shown on an unwaveringly loyal prisoner. -->
+  <BreakLoyalty.FloatMenu.Begin>Begin Break Loyalty ceremony on {0}</BreakLoyalty.FloatMenu.Begin>
+
+  <!-- Result letter title and body. -->
+  <BreakLoyalty.OutcomeLetter.Success>Loyalty broken</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Loyalty unshaken</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Something gave way. The prisoner's unwavering devotion cracked, and they can now be recruited.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>The ceremony failed. The prisoner clung to their faction, more resentful than before.</BreakLoyalty.Outcome.Failure>
+
 </LanguageData>

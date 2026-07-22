@@ -2,10 +2,14 @@
  * Break Loyalty — ritual outcome worker.
  *
  * Resolves the ceremony. Ritual quality, summed from the outcome comps and
- * hard-capped by the def's maxQuality (0.25), IS the success probability. A
- * flawlessly run ceremony on a disillusioned, well-treated prisoner reaches
- * the design ceiling; a rushed one on a devoted loyalist barely moves off the
- * base.
+ * hard-capped by the def's maxQuality (0.25), IS the success probability, so
+ * the dialog's quality number is literally the chance to break loyalty. A
+ * flawless ceremony on a disillusioned, well-treated prisoner reaches the
+ * design ceiling; a rushed one on a devoted loyalist barely moves off the base.
+ *
+ * The def declares no outcomeChances: the vanilla two-outcome table normalizes
+ * its numbers in a way that would contradict the single quality-as-chance roll
+ * used here, so this worker owns the roll and writes its own result letter.
  *
  * Creative Commons License Attribution-ShareAlike 4.0 International
  *************************************************************************/
@@ -22,9 +26,13 @@ public class RitualOutcomeEffectWorker_BreakLoyalty : RitualOutcomeEffectWorker_
 
     public RitualOutcomeEffectWorker_BreakLoyalty(RitualOutcomeEffectDef def) : base(def) { }
 
-    // A single stochastic roll decides the outcome, so the weighted
-    // outcome-chance table the base class would apply does not fit here.
     public override bool SupportsAttachableOutcomeEffect => false;
+
+    /// Relabels the dialog's headline number from the generic "Expected quality"
+    /// to what it actually represents here: the chance to break loyalty.
+    public override string ExpectedQualityLabel() {
+        return "BreakLoyalty.ChanceLabel".Translate();
+    }
 
     public override void Apply(float progress, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual) {
         Pawn subject = jobRitual.PawnWithRole("subject");
@@ -42,25 +50,14 @@ public class RitualOutcomeEffectWorker_BreakLoyalty : RitualOutcomeEffectWorker_
             }
         }
 
-        RitualOutcomePossibility outcome = OutcomeFor(success);
-        string text = outcome.description.Formatted(jobRitual.Ritual.Label).CapitalizeFirst();
-        text += "\n\n" + OutcomeQualityBreakdownDesc(chance, progress, jobRitual);
+        string body = (success ? "BreakLoyalty.Outcome.Success" : "BreakLoyalty.Outcome.Failure").Translate();
+        body += "\n\n" + OutcomeQualityBreakdownDesc(chance, progress, jobRitual);
 
+        string label = (success ? "BreakLoyalty.OutcomeLetter.Success" : "BreakLoyalty.OutcomeLetter.Failure").Translate();
         LookTargets lookAt = subject != null ? (LookTargets)subject : jobRitual.selectedTarget;
         Find.LetterStack.ReceiveLetter(
-            "OutcomeLetterLabel".Translate(outcome.label.Named("OUTCOMELABEL"), jobRitual.Ritual.Label.Named("RITUALLABEL")),
-            text,
+            label, body,
             success ? LetterDefOf.RitualOutcomePositive : LetterDefOf.RitualOutcomeNegative,
             lookAt);
-    }
-
-    /// Picks the narration matching the roll. Positive/negative entries are
-    /// declared in the def's outcomeChances; the chance values there are unused
-    /// because the real probability is the ritual quality computed above.
-    private RitualOutcomePossibility OutcomeFor(bool success) {
-        foreach (RitualOutcomePossibility possibility in def.outcomeChances) {
-            if (possibility.Positive == success) return possibility;
-        }
-        return def.outcomeChances[success ? def.outcomeChances.Count - 1 : 0];
     }
 }
