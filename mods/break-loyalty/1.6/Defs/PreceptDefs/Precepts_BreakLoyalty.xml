@@ -14,6 +14,10 @@
     <ritualPatternBase>BreakLoyalty</ritualPatternBase>
     <iconPath>UI/Icons/Rituals/Trial</iconPath>
     <useCooldownFromAbilityGroupDef>BreakLoyalty</useCooldownFromAbilityGroupDef>
+    <!-- The 5-day ability cooldown above is the only intended throttle. Disable
+         the vanilla anytime-ritual repeat penalty, which otherwise slashes
+         quality by up to -80% for 20 days after each use. -->
+    <useRepeatPenalty>false</useRepeatPenalty>
     <classic>true</classic>
     <visible>false</visible>
     <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
