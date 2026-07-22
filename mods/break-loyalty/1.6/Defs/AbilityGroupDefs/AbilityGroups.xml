@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Colony-wide cooldown for the Break Loyalty ceremony. Referenced by the
+       precept via useCooldownFromAbilityGroupDef, exactly as vanilla Trial and
+       Conversion share the "Leader"/"Moralist" groups. 300000 ticks = 5 days. -->
+  <AbilityGroupDef>
+    <defName>BreakLoyalty</defName>
+    <cooldownTicks>300000</cooldownTicks>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <ritualRoleIds>
+      <li>speaker</li>
+    </ritualRoleIds>
+  </AbilityGroupDef>
+
+</Defs>

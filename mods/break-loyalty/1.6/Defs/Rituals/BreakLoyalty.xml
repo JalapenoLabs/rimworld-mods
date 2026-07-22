@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ================================================================== -->
+  <!-- Pattern: ties the precept to a behavior, an outcome, and a target. -->
+  <!-- ================================================================== -->
+  <RitualPatternDef>
+    <defName>BreakLoyalty</defName>
+    <ritualBehavior>BreakLoyalty</ritualBehavior>
+    <ritualOutcomeEffect>BreakLoyalty</ritualOutcomeEffect>
+    <ritualTargetFilter>AltarOrRitualSpot</ritualTargetFilter>
+    <ritualObligationTargetFilter>RitualSpotOrAltar</ritualObligationTargetFilter>
+    <alwaysStartAnytime>true</alwaysStartAnytime>
+    <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
+    <canMergeGizmosFromDifferentIdeos>false</canMergeGizmosFromDifferentIdeos>
+    <ritualExplanation>If it succeeds, the prisoner's unwavering loyalty is broken and they can be recruited. If it fails, they grow more resentful.</ritualExplanation>
+  </RitualPatternDef>
+
+  <!-- ================================================================== -->
+  <!-- Behavior: gather an audience, have the speaker escort the prisoner  -->
+  <!-- to the ritual spot, then address the crowd. Modeled on the vanilla  -->
+  <!-- conversion ritual.                                                  -->
+  <!-- ================================================================== -->
+  <RitualBehaviorDef>
+    <defName>BreakLoyalty</defName>
+    <workerClass>BreakLoyalty.RitualBehaviorWorker_BreakLoyalty</workerClass>
+    <durationTicks>5000</durationTicks>
+    <roles Inherit="False">
+      <li Class="RitualRoleColonist">
+        <label>speaker</label>
+        <id>speaker</id>
+        <required>True</required>
+        <maxCount>1</maxCount>
+        <countsAsParticipant>False</countsAsParticipant>
+        <allowChild>false</allowChild>
+      </li>
+      <li Class="BreakLoyalty.RitualRole_LoyalPrisoner">
+        <label>prisoner</label>
+        <id>subject</id>
+        <maxCount>1</maxCount>
+        <required>True</required>
+        <allowOtherIdeos>True</allowOtherIdeos>
+        <countsAsParticipant>False</countsAsParticipant>
+      </li>
+    </roles>
+    <stages>
+      <!-- Stage 1: speaker fetches the prisoner and brings them to the spot. -->
+      <li Class="RitualStage_InteractWithRole">
+        <defaultDuty>Spectate</defaultDuty>
+        <targetId>subject</targetId>
+        <endTriggers>
+          <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
+        </endTriggers>
+        <failTriggers>
+          <li Class="StageFailTrigger_TargetPawnUnreachable">
+            <takerId>speaker</takerId>
+            <takeeId>subject</takeeId>
+            <desc>Prisoner is not reachable.</desc>
+          </li>
+          <li Class="StageFailTrigger_PawnAsleep">
+            <desc>speaker asleep</desc>
+            <pawnId>speaker</pawnId>
+          </li>
+        </failTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>speaker</roleId>
+            <dutyDef>DeliverPawnToAltar</dutyDef>
+          </li>
+          <li>
+            <roleId>subject</roleId>
+            <dutyDef>ArriveToCell</dutyDef>
+            <customPositions>
+              <li Class="RitualPosition_InFrontThingCenter"/>
+            </customPositions>
+          </li>
+        </roleBehaviors>
+      </li>
+      <!-- Stage 2: the address. -->
+      <li>
+        <defaultDuty>Spectate</defaultDuty>
+        <endTriggers>
+          <li Class="StageEndTrigger_DurationPercentage">
+            <percentage>1</percentage>
+          </li>
+        </endTriggers>
+        <roleBehaviors>
+          <li>
+            <roleId>speaker</roleId>
+            <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+            <speakerInteraction>Speech_Conversion</speakerInteraction>
+            <customPositions>
+              <li Class="RitualPosition_Lectern">
+                <maxDistanceToFocus>5</maxDistanceToFocus>
+              </li>
+              <li Class="RitualPosition_OnInteractionCell" />
+            </customPositions>
+          </li>
+          <li>
+            <roleId>subject</roleId>
+            <dutyDef>LayDownAwake</dutyDef>
+          </li>
+        </roleBehaviors>
+      </li>
+    </stages>
+  </RitualBehaviorDef>
+
+  <!-- ================================================================== -->
+  <!-- Outcome: quality (capped at 0.25) is the success probability.       -->
+  <!-- Caster social skill and spectator count use vanilla comps; the      -->
+  <!-- remaining factors are this mod's custom comps.                      -->
+  <!-- ================================================================== -->
+  <RitualOutcomeEffectDef>
+    <defName>BreakLoyalty</defName>
+    <description>Ritual quality is the chance to break the prisoner's loyalty, capped at 25%.</description>
+    <workerClass>BreakLoyalty.RitualOutcomeEffectWorker_BreakLoyalty</workerClass>
+    <startingQuality>0.05</startingQuality>
+    <minQuality>0</minQuality>
+    <maxQuality>0.25</maxQuality>
+    <warnOnLowQuality>false</warnOnLowQuality>
+    <comps>
+      <li Class="RitualOutcomeComp_PawnStatScaled">
+        <label>speaker's social impact</label>
+        <roleId>speaker</roleId>
+        <statDef>SocialImpact</statDef>
+        <curve>
+          <points>
+            <li>(0.2, 0.0)</li>
+            <li>(1.0, 0.06)</li>
+            <li>(1.5, 0.08)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="RitualOutcomeComp_ParticipantCount">
+        <label>spectators</label>
+        <curve>
+          <points>
+            <li>(0, 0.0)</li>
+            <li>(1, 0.02)</li>
+            <li>(4, 0.05)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="BreakLoyalty.RitualOutcomeComp_TargetDisillusionment">
+        <label>faction disillusionment</label>
+        <curve>
+          <points>
+            <li>(0, 0.0)</li>
+            <li>(100, 0.03)</li>
+            <li>(200, 0.06)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="BreakLoyalty.RitualOutcomeComp_TargetSharesColonyIdeo">
+        <label>shares your ideoligion</label>
+        <curve>
+          <points>
+            <li>(0, 0.0)</li>
+            <li>(1, 0.05)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="BreakLoyalty.RitualOutcomeComp_TargetColonyBonds">
+        <label>bonds with colonists</label>
+        <curve>
+          <points>
+            <li>(0, 0.0)</li>
+            <li>(1, 0.02)</li>
+            <li>(4, 0.05)</li>
+          </points>
+        </curve>
+      </li>
+      <li Class="BreakLoyalty.RitualOutcomeComp_TargetContentment">
+        <label>prisoner's contentment</label>
+        <curve>
+          <points>
+            <li>(0, 0.0)</li>
+            <li>(0.5, 0.02)</li>
+            <li>(1.0, 0.04)</li>
+          </points>
+        </curve>
+      </li>
+    </comps>
+    <outcomeChances>
+      <li>
+        <label>loyalty unshaken</label>
+        <chance>0.75</chance>
+        <description>The ceremony failed. The prisoner clung to their faction, more resentful than before.</description>
+        <positivityIndex>-1</positivityIndex>
+      </li>
+      <li>
+        <label>loyalty broken</label>
+        <chance>0.25</chance>
+        <description>Something gave way. The prisoner's unwavering devotion cracked, and they can now be recruited.</description>
+        <positivityIndex>1</positivityIndex>
+      </li>
+    </outcomeChances>
+  </RitualOutcomeEffectDef>
+
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Willing Hands</name>
+  <author>JalapenoLabs</author>
+  <modVersion>2026.7.22</modVersion>
+
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Ideology</packageId>
+      <displayName>Ideology</displayName>
+    </li>
+  </modDependencies>
+
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+  </loadAfter>
+
+  <packageId>jalapenolabs.rimworld.willinghands</packageId>
+  <url>https://github.com/JalapenoLabs/rimworld-mods</url>
+  <description>The mirror of a slave rebellion: treat a slave well enough, for long enough, and they may choose to stay.
+
+A slave kept in high comfort and good spirits over an extended period builds a quiet sense of belonging. Once settled, there is a small daily chance they send a letter asking to become a full colonist. Accept, and they join freely, even an unwaveringly loyal slave, because a willing choice is not recruitment. Mistreat them and the streak erodes, so the path to a rebellion and the path to a new colonist are two ends of the same lever.
+
+Requires the Ideology DLC.</description>
+</ModMetaData>

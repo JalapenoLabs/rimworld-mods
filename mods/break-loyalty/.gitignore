@@ -1,0 +1,16 @@
+# ── Build artifacts ──────────────────────────────────────────────────────────
+/obj/
+/bin/
+
+# ── Solution files (managed at monorepo root) ────────────────────────────────
+*.sln
+
+# ── Steam Workshop publish artifacts ─────────────────────────────────────────
+/workshop/
+workshop_build.vdf
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+*.env
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log

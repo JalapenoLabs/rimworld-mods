@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Choice letter for a slave's request to join. letterClass points at the
+       ChoiceLetter subclass that renders the accept/refuse options. -->
+  <LetterDef>
+    <defName>WillingHands_JoinRequest</defName>
+    <letterClass>WillingHands.ChoiceLetter_SlaveJoinRequest</letterClass>
+    <color>(95, 151, 191)</color>
+    <flashInterval>-1</flashInterval>
+  </LetterDef>
+
+</Defs>

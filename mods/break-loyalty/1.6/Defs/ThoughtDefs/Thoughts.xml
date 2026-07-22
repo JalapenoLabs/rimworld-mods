@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Applied to the prisoner each time a ceremony fails; -10 mood per stack,
+       up to five stacks, lasting 15 days. Cleared when a ceremony succeeds. -->
+  <ThoughtDef>
+    <defName>BreakLoyalty_FailedCeremony</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>coerced loyalty</label>
+        <description>They tried to break my devotion before a jeering crowd. I held firm, but it left me shaken and resentful.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

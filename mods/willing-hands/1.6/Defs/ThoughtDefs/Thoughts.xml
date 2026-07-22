@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Applied when a former slave is welcomed as a colonist by their own choice. -->
+  <ThoughtDef>
+    <defName>WillingHands_ChoseToJoin</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>10</durationDays>
+    <stages>
+      <li>
+        <label>chose to belong</label>
+        <description>I chose this place as my home, and they welcomed me as one of their own.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

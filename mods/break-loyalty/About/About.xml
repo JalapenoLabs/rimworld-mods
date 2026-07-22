@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Break Loyalty</name>
+  <author>JalapenoLabs</author>
+  <modVersion>2026.7.22</modVersion>
+
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Ideology</packageId>
+      <displayName>Ideology</displayName>
+    </li>
+  </modDependencies>
+
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Ideology</li>
+  </loadAfter>
+
+  <packageId>jalapenolabs.rimworld.breakloyalty</packageId>
+  <url>https://github.com/JalapenoLabs/rimworld-mods</url>
+  <description>Adds the Break Loyalty ceremony: a ritual that can shatter a prisoner's unwavering loyalty to their faction, opening the door to recruitment.
+
+A speaker addresses the prisoner before an audience. The chance of success is deliberately low and capped at 25%, raised by the speaker's social skill, spectators, the prisoner's disillusionment with their own faction, shared ideoligion, bonds with your colonists, and the prisoner's contentment. A colony-wide cooldown of five days keeps it from being spammed, and a failed ceremony leaves the prisoner resentful.
+
+Requires the Ideology DLC.</description>
+</ModMetaData>

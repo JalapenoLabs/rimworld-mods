@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- classic + visible=false makes this ritual present in every colony
+       regardless of chosen memes or precepts (the same pattern vanilla uses
+       for Conversion, Execution, and Funeral) without appearing as a
+       selectable precept in the ideoligion editor. -->
+  <PreceptDef>
+    <defName>BreakLoyalty</defName>
+    <label>break loyalty</label>
+    <description>A ceremony to shatter a prisoner's unwavering loyalty to their faction, opening the door to recruitment. A speaker addresses the prisoner before an audience. Success is never certain and never likely; failure leaves the prisoner resentful.</description>
+    <issue>Ritual</issue>
+    <preceptClass>Precept_Ritual</preceptClass>
+    <ritualPatternBase>BreakLoyalty</ritualPatternBase>
+    <iconPath>UI/Icons/Rituals/Trial</iconPath>
+    <useCooldownFromAbilityGroupDef>BreakLoyalty</useCooldownFromAbilityGroupDef>
+    <classic>true</classic>
+    <visible>false</visible>
+    <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+    <selectionWeight>1.0</selectionWeight>
+    <capitalizeAsTitle>false</capitalizeAsTitle>
+  </PreceptDef>
+
+</Defs>
