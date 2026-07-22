@@ -25,7 +25,10 @@ internal static class DrawPawnPortraitInternal_MoodOverlay {
     // Match the vanilla colonist bar: minor/major use a soft wash, extreme is heavier.
     private const float FillAlphaMinorOrMajor = 0.10f;
     private const float FillAlphaExtreme = 0.15f;
-    private const int InnerBorderThickness = 2;
+    // A thin, semi-transparent edge: enough to read the band at a glance without
+    // overpowering the tightly packed portraits.
+    private const int InnerBorderThickness = 1;
+    private const float BorderAlpha = 0.55f;
 
     // The original method computes Rect(r.x, r.y, r.width * scale, 50f * scale)
     // for the portrait area; the 20f-tall label band sits beneath it. We mirror
@@ -57,11 +60,11 @@ internal static class DrawPawnPortraitInternal_MoodOverlay {
         // Soft wash inside the rect, mirroring ColonistBarColonistDrawer.DrawColonist.
         Widgets.DrawBoxSolid(portraitRect, color.ToTransparent(fillAlpha));
 
-        // Saturated inside-edge border so the band reads at a glance.
+        // Soft inside-edge border so the band reads at a glance without shouting.
         // Drawn inside the rect (not expanded) because dialog slots are tightly
         // packed and an outward atlas would clip neighbouring portraits.
         Color previousGuiColor = GUI.color;
-        GUI.color = color;
+        GUI.color = color.ToTransparent(BorderAlpha);
         Widgets.DrawBox(portraitRect, InnerBorderThickness);
         GUI.color = previousGuiColor;
     }
