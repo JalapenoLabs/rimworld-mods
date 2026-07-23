@@ -28,5 +28,12 @@
 		<Reference Include="../../RimworldForCICD/Managed/*.dll">
 			<Private>False</Private>
 		</Reference>
+
+		<!-- Harmony — shared copy from the root-level binaries folder. Used only
+		     for the narrow Pawn.GetGizmos postfix that adds the selected-prisoner
+		     command. -->
+		<Reference Include="../../binaries/0Harmony.dll">
+			<Private>False</Private>
+		</Reference>
 	</ItemGroup>
 </Project>

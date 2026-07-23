@@ -12,7 +12,6 @@
  * Creative Commons License Attribution-ShareAlike 4.0 International
  *************************************************************************/
 
-using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -29,34 +28,12 @@ public class FloatMenuOptionProvider_BreakLoyalty : FloatMenuOptionProvider {
 
     protected override FloatMenuOption GetSingleOptionFor(Pawn clickedPawn, FloatMenuContext context) {
         // Only unwaveringly loyal prisoners of the colony are valid subjects.
-        if (clickedPawn == null || !clickedPawn.IsPrisonerOfColony) return null;
-        if (clickedPawn.guest == null || clickedPawn.guest.Recruitable) return null;
-
-        Precept_Ritual ritual = FindRitual();
-        if (ritual == null) return null;
+        if (!BreakLoyaltyUtility.IsUnwaveringPrisonerOfColony(clickedPawn)) return null;
+        if (BreakLoyaltyUtility.FindRitual() == null) return null;
 
         Pawn organizer = context.FirstSelectedPawn;
         return new FloatMenuOption(
             "BreakLoyalty.FloatMenu.Begin".Translate(clickedPawn.LabelShort),
-            delegate {
-                ritual.ShowRitualBeginWindow(
-                    new TargetInfo(clickedPawn.Position, clickedPawn.Map),
-                    forObligation: null,
-                    selectedPawn: organizer,
-                    forcedForRole: new Dictionary<string, Pawn> { { "subject", clickedPawn } });
-            });
-    }
-
-    /// The ceremony precept lives on the player's ideoligion (it is `classic`,
-    /// so always present). Returns null if Ideology is somehow absent.
-    private static Precept_Ritual FindRitual() {
-        Ideo ideo = Faction.OfPlayer?.ideos?.PrimaryIdeo;
-        if (ideo == null) return null;
-        foreach (Precept precept in ideo.PreceptsListForReading) {
-            if (precept is Precept_Ritual ritual && ritual.def == BreakLoyaltyDefOf.BreakLoyalty) {
-                return ritual;
-            }
-        }
-        return null;
+            delegate { BreakLoyaltyUtility.BeginCeremony(clickedPawn, organizer); });
     }
 }

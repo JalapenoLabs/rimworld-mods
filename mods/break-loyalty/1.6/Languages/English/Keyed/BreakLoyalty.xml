@@ -11,6 +11,11 @@
   <!-- Right-click option shown on an unwaveringly loyal prisoner. -->
   <BreakLoyalty.FloatMenu.Begin>Begin Break Loyalty ceremony on {0}</BreakLoyalty.FloatMenu.Begin>
 
+  <!-- Command-bar gizmo shown when an unwaveringly loyal prisoner is selected. -->
+  <BreakLoyalty.Gizmo.Label>Break loyalty</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Begin the Break Loyalty ceremony on {0}, held in their cell. A speaker will address {0} before an audience in an attempt to shatter their unwavering loyalty.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>The ceremony is on cooldown. It will be available in {0}.</BreakLoyalty.Gizmo.OnCooldown>
+
   <!-- Result letter title and body. -->
   <BreakLoyalty.OutcomeLetter.Success>Loyalty broken</BreakLoyalty.OutcomeLetter.Success>
   <BreakLoyalty.OutcomeLetter.Failure>Loyalty unshaken</BreakLoyalty.OutcomeLetter.Failure>
