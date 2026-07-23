@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Sky Islands: Starjack Patches</name>
+  <author>JalapenoLabs</author>
+  <modVersion>2026.7.22</modVersion>
+
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld.Odyssey</packageId>
+      <displayName>Odyssey</displayName>
+    </li>
+    <li>
+      <packageId>metalocif.skyislands</packageId>
+      <displayName>Sky Islands</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3550602990</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Odyssey</li>
+    <li>metalocif.skyislands</li>
+  </loadAfter>
+
+  <packageId>jalapenolabs.rimworld.skyislandsstarjackpatches</packageId>
+  <url>https://github.com/JalapenoLabs/rimworld-mods</url>
+  <description>Treats a Sky Islands map as the middle ground it is for space-adapted pawns, instead of the harshest "planetside" case.
+
+Sky islands float at high altitude on a child-of-orbit planet layer that the Sky Islands mod deliberately marks non-space so the maps stay habitable. A side effect is that space-adapted colonists (like starjacks) take full planetary penalties there. This patch softens two of them while on a sky island:
+
+- The shipborn "space habitat" ideoligion mood ("Planetary habitat", -2) becomes neutral: no penalty, and no space bonus.
+- The "low gravity adapted" gene's planetside move/work penalty is halved.
+
+Both changes apply only while a pawn is on a sky island; everywhere else, vanilla behavior is unchanged. Requires the Odyssey DLC and the Sky Islands mod.</description>
+</ModMetaData>
