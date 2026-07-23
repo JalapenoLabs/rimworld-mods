@@ -37,7 +37,17 @@ public class RitualOutcomeEffectWorker_BreakLoyalty : RitualOutcomeEffectWorker_
     public override void Apply(float progress, Dictionary<Pawn, int> totalPresence, LordJob_Ritual jobRitual) {
         Pawn subject = jobRitual.PawnWithRole("subject");
         float chance = Mathf.Clamp01(GetQuality(jobRitual, progress));
-        bool success = subject != null && Rand.Chance(chance);
+        // Roll explicitly (rather than Rand.Chance) so dev-mode logging can show
+        // the raw value against the threshold. Equivalent to Rand.Chance(chance).
+        float roll = Rand.Value;
+        bool success = subject != null && roll < chance;
+
+        if (Prefs.DevMode) {
+            Log.Message("[Break Loyalty] " + (subject?.LabelShort ?? "no subject")
+                + ": chance " + chance.ToStringPercent() + ", rolled " + roll.ToString("F3")
+                + " -> " + (success ? "SUCCESS" : "failure")
+                + " (ritual progress " + progress.ToStringPercent() + ").");
+        }
 
         if (subject != null) {
             MemoryThoughtHandler memories = subject.needs?.mood?.thoughts?.memories;
