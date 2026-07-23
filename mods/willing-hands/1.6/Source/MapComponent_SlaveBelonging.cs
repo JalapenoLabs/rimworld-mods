@@ -127,4 +127,38 @@ public class MapComponent_SlaveBelonging : MapComponent {
             records = new Dictionary<Pawn, BelongingRecord>();
         }
     }
+
+    // ── Dev-tool hooks (see WillingHandsDebugActions) ─────────────────────────
+
+    /// Fire the join-request letter for this slave immediately, bypassing the
+    /// contentment streak and the daily roll.
+    public void DebugForceJoinRequest(Pawn slave) {
+        SendJoinRequest(slave);
+    }
+
+    /// Fill the contentment streak to the threshold and clear any cooldown, so
+    /// the slave becomes eligible and may ask on an upcoming sample.
+    public void DebugSettle(Pawn slave) {
+        if (!records.TryGetValue(slave, out BelongingRecord record)) {
+            record = records[slave] = new BelongingRecord();
+        }
+        record.contentTicks = WillingHandsTuning.RequiredContentTicks;
+        record.cooldownUntilTick = 0;
+    }
+
+    /// Human-readable snapshot of a slave's hidden belonging state.
+    public string DebugStateFor(Pawn slave) {
+        if (!records.TryGetValue(slave, out BelongingRecord record)) {
+            return "[Willing Hands] " + slave.LabelShort + ": no record yet (not sampled since becoming a slave).";
+        }
+        int now = Find.TickManager.TicksGame;
+        int pct = Mathf.RoundToInt(100f * record.contentTicks / WillingHandsTuning.RequiredContentTicks);
+        string cooldown = record.cooldownUntilTick > now
+            ? (record.cooldownUntilTick - now).ToStringTicksToPeriod()
+            : "ready";
+        return "[Willing Hands] " + slave.LabelShort + ": belonging " + pct + "% ("
+            + record.contentTicks + "/" + WillingHandsTuning.RequiredContentTicks + " ticks)"
+            + ", content now: " + IsContent(slave)
+            + ", ask cooldown: " + cooldown + ".";
+    }
 }
