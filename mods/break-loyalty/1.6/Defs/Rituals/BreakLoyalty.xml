@@ -33,6 +33,10 @@
         <maxCount>1</maxCount>
         <countsAsParticipant>False</countsAsParticipant>
         <allowChild>false</allowChild>
+        <!-- Default the speaker to the colonist with the highest Social Impact,
+             the same stat that drives the ceremony's success. Anyone can still
+             be assigned manually; this only sets the pre-selected pick. -->
+        <usedStat>SocialImpact</usedStat>
       </li>
       <li Class="BreakLoyalty.RitualRole_LoyalPrisoner">
         <label>prisoner</label>
