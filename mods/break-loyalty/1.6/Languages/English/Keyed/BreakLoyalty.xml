@@ -8,6 +8,9 @@
   <!-- Relabels the dialog's headline quality number to what it means here. -->
   <BreakLoyalty.ChanceLabel>Chance to break loyalty</BreakLoyalty.ChanceLabel>
 
+  <!-- Chimed when the ceremony comes off cooldown. -->
+  <BreakLoyalty.CooldownReady>The Break Loyalty ceremony is ready again.</BreakLoyalty.CooldownReady>
+
   <!-- Right-click option shown on an unwaveringly loyal prisoner. -->
   <BreakLoyalty.FloatMenu.Begin>Begin Break Loyalty ceremony on {0}</BreakLoyalty.FloatMenu.Begin>
 
