@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Sky Islands Minimap Fix</name>
+  <author>JalapenoLabs</author>
+  <modVersion>2026.7.23</modVersion>
+
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>dubwise.dubsmintminimap</packageId>
+      <displayName>Dubs Mint Minimap</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1662119905</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>dubwise.dubsmintminimap</li>
+    <li>metalocif.skyislands</li>
+  </loadAfter>
+
+  <packageId>jalapenolabs.rimworld.skyislandsminimapfix</packageId>
+  <url>https://github.com/JalapenoLabs/rimworld-mods</url>
+  <description>Fixes a crash where Dubs Mint Minimap throws a NullReferenceException on Sky Islands terrain.
+
+Sky Islands terrain renders through custom graphics and leaves its texture path null. Dubs Mint Minimap's terrain color routine reads that path without a null check, so flying to a sky island blanked the minimap and threw an error every frame, which also stopped the needs and health tabs from drawing.
+
+This adds a tiny Harmony guard so terrain with no texture path reads as a blank minimap tile instead of crashing. It changes nothing about how the terrain itself looks in the world. Applies only when Dubs Mint Minimap is installed; requires Harmony.</description>
+</ModMetaData>

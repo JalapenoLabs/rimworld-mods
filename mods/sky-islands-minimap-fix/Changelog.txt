@@ -1,0 +1,3 @@
+# Changelog
+
+2026.7.23 - Initial release. Guards Dubs Mint Minimap's terrain blitter against null texture paths (as used by Sky Islands terrain), which otherwise threw a NullReferenceException every frame after flying to a sky island and blocked the needs/health tabs from rendering.
