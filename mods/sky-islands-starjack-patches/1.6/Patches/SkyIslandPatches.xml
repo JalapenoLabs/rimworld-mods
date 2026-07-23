@@ -8,34 +8,32 @@
     <mods>
       <li>Ludeon.RimWorld.Odyssey</li>
     </mods>
-    <match>
-      <Operation Class="PatchOperationSequence">
-        <operations>
+    <match Class="PatchOperationSequence">
+      <operations>
 
-          <!-- Shipborn "Planetary habitat" mood (-2): neutral on a sky island. -->
-          <li Class="PatchOperationReplace">
-            <xpath>/Defs/ThoughtDef[defName="SpaceHabitat_Mood"]/workerClass</xpath>
-            <value>
-              <workerClass>SkyIslandsStarjackPatches.ThoughtWorker_Precept_SpaceHabitat_SkyIslandNeutral</workerClass>
-            </value>
-          </li>
+        <!-- Shipborn "Planetary habitat" mood (-2): neutral on a sky island. -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThoughtDef[defName="SpaceHabitat_Mood"]/workerClass</xpath>
+          <value>
+            <workerClass>SkyIslandsStarjackPatches.ThoughtWorker_Precept_SpaceHabitat_SkyIslandNeutral</workerClass>
+          </value>
+        </li>
 
-          <!-- Low-gravity-adapted planetside penalty: halved on a sky island by
-               adding a counteracting +0.1 move / +0.05 work offset there. -->
-          <li Class="PatchOperationAdd">
-            <xpath>/Defs/GeneDef[defName="MoveSpeed_Space"]/conditionalStatAffecters</xpath>
-            <value>
-              <li Class="SkyIslandsStarjackPatches.ConditionalStatAffecter_OnSkyIsland">
-                <statOffsets>
-                  <MoveSpeed>0.1</MoveSpeed>
-                  <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-                </statOffsets>
-              </li>
-            </value>
-          </li>
+        <!-- Low-gravity-adapted planetside penalty: halved on a sky island by
+             adding a counteracting +0.1 move / +0.05 work offset there. -->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/GeneDef[defName="MoveSpeed_Space"]/conditionalStatAffecters</xpath>
+          <value>
+            <li Class="SkyIslandsStarjackPatches.ConditionalStatAffecter_OnSkyIsland">
+              <statOffsets>
+                <MoveSpeed>0.1</MoveSpeed>
+                <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+              </statOffsets>
+            </li>
+          </value>
+        </li>
 
-        </operations>
-      </Operation>
+      </operations>
     </match>
   </Operation>
 
