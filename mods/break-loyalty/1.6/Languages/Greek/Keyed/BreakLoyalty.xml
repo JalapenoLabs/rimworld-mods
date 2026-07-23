@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Πρέπει να είναι αιχμάλωτος της αποικίας.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Πρέπει να είναι ακλόνητα πιστός αιχμάλωτος.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Πιθανότητα να σπάσει η πίστη</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Η τελετή Σπάσιμο της Πίστης είναι και πάλι έτοιμη.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Έναρξη τελετής Σπάσιμο της Πίστης στον {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Σπάσιμο της πίστης</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Έναρξη της τελετής Σπάσιμο της Πίστης στον {0}, που γίνεται στο κελί του. Ένας ομιλητής θα απευθυνθεί στον {0} μπροστά σε κοινό σε μια προσπάθεια να συντρίψει την ακλόνητη πίστη του.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Η τελετή βρίσκεται σε αναμονή επαναφόρτισης. Θα είναι διαθέσιμη σε {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Η πίστη έσπασε</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Η πίστη ακλόνητη</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Κάτι υποχώρησε. Η ακλόνητη αφοσίωση του αιχμαλώτου ράγισε, και τώρα μπορεί να στρατολογηθεί.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Η τελετή απέτυχε. Ο αιχμάλωτος προσκολλήθηκε στην παράταξή του, πιο μνησίκακος από πριν.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

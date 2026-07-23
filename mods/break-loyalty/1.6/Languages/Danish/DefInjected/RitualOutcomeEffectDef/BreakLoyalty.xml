@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Ritualets kvalitet er chancen for at bryde fangens loyalitet, med et loft på 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>talerens sociale gennemslagskraft</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>tilskuere</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>desillusion med fraktionen</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>deler din ideoligion</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>bånd til kolonisterne</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>fangens tilfredshed</BreakLoyalty.comps.5.label>
+
+</LanguageData>

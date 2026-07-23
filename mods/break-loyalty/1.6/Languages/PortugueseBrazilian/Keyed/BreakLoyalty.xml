@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Precisa ser um prisioneiro da colônia.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Precisa ser um prisioneiro de lealdade inabalável.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Chance de quebrar a lealdade</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>A cerimônia Quebrar a Lealdade está pronta novamente.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Iniciar a cerimônia Quebrar a Lealdade em {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Quebrar a lealdade</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Iniciar a cerimônia Quebrar a Lealdade em {0}, realizada em sua cela. Um orador se dirigirá a {0} diante de uma plateia, tentando estilhaçar sua lealdade inabalável.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>A cerimônia está em recarga. Estará disponível em {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lealdade quebrada</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lealdade inabalável</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Algo cedeu. A devoção inabalável do prisioneiro rachou, e agora ele pode ser recrutado.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>A cerimônia falhou. O prisioneiro se agarrou à sua facção, mais ressentido do que antes.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

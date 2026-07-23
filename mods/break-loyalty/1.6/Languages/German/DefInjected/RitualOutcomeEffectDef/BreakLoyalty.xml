@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Die Ritualqualität ist die Chance, die Loyalität des Gefangenen zu brechen, begrenzt auf 25 %.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>sozialer Einfluss des Redners</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>Zuschauer</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>Ernüchterung über die Fraktion</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>teilt deine Ideoligion</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>Bindungen zu Kolonisten</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>Zufriedenheit des Gefangenen</BreakLoyalty.comps.5.label>
+
+</LanguageData>

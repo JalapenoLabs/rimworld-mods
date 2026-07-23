@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Jakość rytuału to szansa na złamanie lojalności więźnia, ograniczona do 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>wpływ społeczny mówcy</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>widzowie</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>rozczarowanie frakcją</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>podziela twoją ideologię</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>więzi z kolonistami</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>zadowolenie więźnia</BreakLoyalty.comps.5.label>
+
+</LanguageData>

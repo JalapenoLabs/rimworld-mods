@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort}希望歸屬於此</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>在為你效力的這段時間裡，{PAWN_labelShort}已經把這個殖民地視為家。衣食無憂、安逸自在，{PAWN_pronoun}不再願意做一個奴隸，而是想憑自己的意願留下來，成為你們中的一員。\n\n你願意接納{PAWN_objective}成為殖民者嗎？</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>接納為殖民者</WillingHands.Accept>
+  <WillingHands.Refuse>繼續奴役</WillingHands.Refuse>
+  <WillingHands.Joined>{0}選擇加入了殖民地。</WillingHands.Joined>
+
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Phải là một tù nhân của thuộc địa.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Phải là một tù nhân trung thành không lay chuyển.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Cơ hội bẻ gãy lòng trung thành</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Nghi lễ Bẻ gãy lòng trung thành đã sẵn sàng trở lại.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Bắt đầu nghi lễ Bẻ gãy lòng trung thành trên {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Bẻ gãy lòng trung thành</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Bắt đầu nghi lễ Bẻ gãy lòng trung thành trên {0}, tổ chức trong phòng giam của họ. Một diễn giả sẽ nói với {0} trước đám đông khán giả nhằm đập tan lòng trung thành không lay chuyển của họ.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Nghi lễ đang trong thời gian hồi. Sẽ khả dụng sau {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lòng trung thành đã bị bẻ gãy</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lòng trung thành không lay chuyển</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Có thứ gì đó đã sụp đổ. Lòng tận tụy không lay chuyển của tù nhân đã rạn nứt, và giờ có thể chiêu mộ họ.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Nghi lễ đã thất bại. Tù nhân càng bám chặt lấy phe phái của mình, oán hận hơn trước.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

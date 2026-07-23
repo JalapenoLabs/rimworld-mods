@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Doit être un prisonnier de la colonie.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Doit être un prisonnier d'une loyauté inébranlable.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Probabilité de briser la loyauté</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>La cérémonie Briser la loyauté est de nouveau disponible.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Lancer la cérémonie Briser la loyauté sur {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Briser la loyauté</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Lancer la cérémonie Briser la loyauté sur {0}, tenue dans sa cellule. Un orateur s'adressera à {0} devant une assemblée pour tenter de briser sa loyauté inébranlable.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>La cérémonie est en temps de recharge. Elle sera disponible dans {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Loyauté brisée</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Loyauté intacte</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Quelque chose a cédé. La dévotion inébranlable du prisonnier s'est fissurée, et il peut désormais être recruté.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>La cérémonie a échoué. Le prisonnier s'est accroché à sa faction, plus rancunier qu'avant.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

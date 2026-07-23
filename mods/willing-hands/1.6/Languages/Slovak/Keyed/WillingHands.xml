@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} chce patriť medzi vás</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Za čas v tvojich službách začal(a) {PAWN_labelShort} považovať túto kolóniu za domov. Dobre najedený, spokojný a pokojný, {PAWN_pronoun} už nechce byť otrokom, ale zostať ako jeden z vás, z vlastnej vôle.\n\nPrijmeš {PAWN_objective} ako kolonistu?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Prijať ako kolonistu</WillingHands.Accept>
+  <WillingHands.Refuse>Ponechať v otroctve</WillingHands.Refuse>
+  <WillingHands.Joined>{0} sa rozhodol(la) pripojiť ku kolónii.</WillingHands.Joined>
+
+</LanguageData>

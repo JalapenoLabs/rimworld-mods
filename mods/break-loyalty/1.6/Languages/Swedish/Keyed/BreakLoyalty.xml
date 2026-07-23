@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Måste vara en fånge i kolonin.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Måste vara en orubbligt lojal fånge.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Chans att bryta lojalitet</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Ceremonin Bryt lojalitet är redo igen.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Inled ceremonin Bryt lojalitet på {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Bryt lojalitet</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Inled ceremonin Bryt lojalitet på {0}, hållen i hans cell. En talare kommer att vända sig till {0} inför en publik i ett försök att krossa hans orubbliga lojalitet.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Ceremonin har nedkylning. Den blir tillgänglig om {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lojalitet bruten</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lojalitet orubbad</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Något gav vika. Fångens orubbliga hängivenhet sprack, och han kan nu rekryteras.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Ceremonin misslyckades. Fången klamrade sig fast vid sin fraktion, mer full av agg än förr.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

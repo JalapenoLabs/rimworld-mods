@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>De kwaliteit van het ritueel is de kans om de loyaliteit van de gevangene te breken, met een maximum van 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>sociale impact van de spreker</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>toeschouwers</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>desillusie met de factie</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>deelt jouw ideoligie</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>banden met kolonisten</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>tevredenheid van de gevangene</BreakLoyalty.comps.5.label>
+
+</LanguageData>

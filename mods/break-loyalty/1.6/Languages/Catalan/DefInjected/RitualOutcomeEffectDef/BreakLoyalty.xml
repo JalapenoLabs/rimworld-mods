@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>La qualitat del ritual és la probabilitat de trencar la lleialtat del presoner, amb un màxim del 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>impacte social de l'orador</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>espectadors</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>desil·lusió amb la facció</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>comparteix la teva ideoligió</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>vincles amb els colons</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>satisfacció del presoner</BreakLoyalty.comps.5.label>
+
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Deve essere un prigioniero della colonia.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Deve essere un prigioniero di incrollabile lealtà.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Probabilità di spezzare la lealtà</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>La cerimonia Spezzare la lealtà è di nuovo pronta.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Avvia la cerimonia Spezzare la lealtà su {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Spezzare la lealtà</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Avvia la cerimonia Spezzare la lealtà su {0}, tenuta nella sua cella. Un oratore si rivolgerà a {0} davanti a un pubblico nel tentativo di frantumare la sua lealtà incrollabile.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>La cerimonia è in fase di ricarica. Sarà disponibile tra {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lealtà spezzata</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lealtà salda</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Qualcosa ha ceduto. La devozione incrollabile del prigioniero si è incrinata, e ora può essere reclutato.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>La cerimonia è fallita. Il prigioniero si è aggrappato alla sua fazione, più rancoroso di prima.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

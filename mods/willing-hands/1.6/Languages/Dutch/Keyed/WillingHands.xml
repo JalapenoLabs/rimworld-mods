@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} wil erbij horen</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Tijdens de tijd in jouw dienst is {PAWN_labelShort} deze kolonie als thuis gaan zien. Goed gevoed, op zijn gemak en tevreden, wil {PAWN_pronoun} niet langer een slaaf zijn, maar uit vrije wil bij jullie blijven als een van jullie.\n\nVerwelkom je {PAWN_objective} als kolonist?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Verwelkom als kolonist</WillingHands.Accept>
+  <WillingHands.Refuse>Houd als slaaf</WillingHands.Refuse>
+  <WillingHands.Joined>{0} heeft ervoor gekozen zich bij de kolonie aan te sluiten.</WillingHands.Joined>
+
+</LanguageData>

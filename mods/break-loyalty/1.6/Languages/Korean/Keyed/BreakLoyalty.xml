@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>식민지의 포로여야 합니다.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>흔들림 없이 충성스러운 포로여야 합니다.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>충성심을 무너뜨릴 확률</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>충성심 무너뜨리기 의식을 다시 사용할 수 있습니다.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>{0}에게 충성심 무너뜨리기 의식 시작</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>충성심 무너뜨리기</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>{0}의 감방에서 충성심 무너뜨리기 의식을 시작합니다. 연설자가 청중 앞에서 {0}에게 연설하여 그 흔들림 없는 충성심을 산산이 부수려 시도합니다.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>의식이 재사용 대기 중입니다. {0} 후에 사용할 수 있습니다.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>충성심이 무너짐</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>충성심이 굳건함</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>무언가 무너졌다. 포로의 흔들림 없는 헌신에 금이 갔고, 이제 영입할 수 있다.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>의식이 실패했다. 포로는 자신의 파벌에 매달렸고, 이전보다 더 큰 원한을 품었다.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

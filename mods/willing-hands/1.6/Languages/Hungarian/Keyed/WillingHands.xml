@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} közétek szeretne tartozni</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>A szolgálatodban töltött idő alatt {PAWN_labelShort} otthonának kezdte tekinteni ezt a kolóniát. Jóllakottan, kényelemben és nyugalomban {PAWN_pronoun} már nem akar rabszolga lenni, hanem saját akaratából közétek tartozni, egyként veletek.\n\nBefogadod {PAWN_objective} kolonistaként?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Befogadás kolonistaként</WillingHands.Accept>
+  <WillingHands.Refuse>Rabszolgaként tartás</WillingHands.Refuse>
+  <WillingHands.Joined>{0} úgy döntött, csatlakozik a kolóniához.</WillingHands.Joined>
+
+</LanguageData>

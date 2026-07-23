@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Koloninin bir tutsağı olmalı.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Sarsılmaz derecede sadık bir tutsak olmalı.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Sadakati kırma şansı</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Sadakati Kırma töreni yeniden hazır.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>{0} üzerinde Sadakati Kırma törenini başlat</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Sadakati kır</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>{0} üzerinde, hücresinde düzenlenen Sadakati Kırma törenini başlat. Bir konuşmacı, izleyiciler önünde {0} kişisine hitap ederek onun sarsılmaz sadakatini paramparça etmeye çalışacak.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Tören bekleme süresinde. {0} sonra kullanılabilir olacak.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Sadakat kırıldı</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Sadakat sarsılmadı</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Bir şey kırıldı. Tutsağın sarsılmaz bağlılığı çatladı ve artık kadroya alınabilir.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Tören başarısız oldu. Tutsak hizbine daha sıkı sarıldı, öncekinden daha kinli.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

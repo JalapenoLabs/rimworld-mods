@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Debe ser un prisionero de la colonia.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Debe ser un prisionero de lealtad inquebrantable.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Probabilidad de romper la lealtad</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>La ceremonia Romper la lealtad vuelve a estar disponible.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Iniciar la ceremonia Romper la lealtad en {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Romper la lealtad</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Iniciar la ceremonia Romper la lealtad en {0}, celebrada en su celda. Un orador se dirigirá a {0} ante un público en un intento de hacer añicos su lealtad inquebrantable.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>La ceremonia está en enfriamiento. Estará disponible en {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lealtad rota</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lealtad intacta</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Algo cedió. La devoción inquebrantable del prisionero se resquebrajó, y ahora puede ser reclutado.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>La ceremonia fracasó. El prisionero se aferró a su facción, más resentido que antes.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

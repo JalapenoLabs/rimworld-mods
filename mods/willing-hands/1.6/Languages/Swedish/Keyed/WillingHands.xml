@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} vill höra hemma</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Under tiden i din tjänst har {PAWN_labelShort} börjat se den här kolonin som sitt hem. Välnärd, bekväm och trygg vill {PAWN_pronoun} inte längre vara slav, utan stanna som en av er, av egen fri vilja.\n\nVill du ta emot {PAWN_objective} som kolonist?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Ta emot som kolonist</WillingHands.Accept>
+  <WillingHands.Refuse>Behåll som slav</WillingHands.Refuse>
+  <WillingHands.Joined>{0} har valt att gå med i kolonin.</WillingHands.Joined>
+
+</LanguageData>

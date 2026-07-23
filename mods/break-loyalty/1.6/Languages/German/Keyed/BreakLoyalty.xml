@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Muss ein Gefangener der Kolonie sein.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Muss ein unerschütterlich loyaler Gefangener sein.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Chance, die Loyalität zu brechen</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Die Zeremonie „Loyalität brechen“ ist wieder bereit.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Zeremonie „Loyalität brechen“ an {0} beginnen</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Loyalität brechen</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Zeremonie „Loyalität brechen“ an {0} beginnen, abgehalten in seiner Zelle. Ein Redner wird vor Publikum zu {0} sprechen, um dessen unerschütterliche Loyalität zu zerschlagen.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Die Zeremonie hat eine Abklingzeit. Sie ist in {0} verfügbar.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Loyalität gebrochen</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Loyalität ungebrochen</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Etwas gab nach. Die unerschütterliche Ergebenheit des Gefangenen bekam Risse, und er kann nun rekrutiert werden.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Die Zeremonie schlug fehl. Der Gefangene klammerte sich an seine Fraktion, verbitterter als zuvor.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

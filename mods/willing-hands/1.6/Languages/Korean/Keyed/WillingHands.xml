@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort}이(가) 함께하기를 원합니다</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>당신을 섬기는 동안 {PAWN_labelShort}은(는) 이 정착지를 집처럼 여기게 되었습니다. 잘 먹고 편안하며 안정된 {PAWN_pronoun}은(는) 더 이상 노예로 남기를 원치 않고, 자신의 자유 의지로 여러분의 일원으로 남기를 바랍니다.\n\n{PAWN_objective}을(를) 정착민으로 맞이하시겠습니까?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>정착민으로 맞이하기</WillingHands.Accept>
+  <WillingHands.Refuse>계속 노예로 두기</WillingHands.Refuse>
+  <WillingHands.Joined>{0}이(가) 정착지에 합류하기로 했습니다.</WillingHands.Joined>
+
+</LanguageData>

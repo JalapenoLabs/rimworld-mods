@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort}は仲間になることを望んでいる</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>あなたに仕えるうちに、{PAWN_labelShort}はこの入植地を故郷と思うようになった。十分な食事と安らぎを得た{PAWN_pronoun}は、もはや奴隷でいることを望まず、自らの意思であなたたちの一員として留まりたいと願っている。\n\n{PAWN_objective}を入植者として迎え入れますか？</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>入植者として迎える</WillingHands.Accept>
+  <WillingHands.Refuse>奴隷のままにする</WillingHands.Refuse>
+  <WillingHands.Joined>{0}は入植地への参加を選んだ。</WillingHands.Joined>
+
+</LanguageData>

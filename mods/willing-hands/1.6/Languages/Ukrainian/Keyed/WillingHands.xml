@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} хоче стати своїм</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>За час служби в тебе {PAWN_labelShort} почав вважати цю колонію домівкою. Ситий, влаштований і спокійний, {PAWN_pronoun} більше не бажає бути рабом, а хоче з власної волі залишитися одним із вас.\n\nЧи приймеш ти {PAWN_objective} до колоністів?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Прийняти до колоністів</WillingHands.Accept>
+  <WillingHands.Refuse>Залишити в рабстві</WillingHands.Refuse>
+  <WillingHands.Joined>{0} вирішив приєднатися до колонії.</WillingHands.Joined>
+
+</LanguageData>

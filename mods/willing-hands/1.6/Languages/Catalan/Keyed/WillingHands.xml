@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} vol pertànyer</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Durant el temps al teu servei, {PAWN_labelShort} ha arribat a veure aquesta colònia com la seva llar. Ben alimentat, còmode i tranquil, {PAWN_pronoun} ja no vol ser un esclau, sinó quedar-se com un de vosaltres, per pròpia voluntat.\n\nAcolliràs {PAWN_objective} com a colon?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Acull-lo com a colon</WillingHands.Accept>
+  <WillingHands.Refuse>Mantén-lo esclavitzat</WillingHands.Refuse>
+  <WillingHands.Joined>{0} ha decidit unir-se a la colònia.</WillingHands.Joined>
+
+</LanguageData>

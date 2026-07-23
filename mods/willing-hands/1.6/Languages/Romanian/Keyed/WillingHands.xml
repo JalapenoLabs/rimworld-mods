@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} dorește să aparțină</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>În timpul petrecut în slujba ta, {PAWN_labelShort} a ajuns să vadă această colonie ca pe o casă. Bine hrănit, tihnit și liniștit, {PAWN_pronoun} nu mai dorește să fie sclav, ci să rămână ca unul de-al vostru, de bunăvoie.\n\nÎl primești pe {PAWN_objective} drept colonist?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Primește-l ca colonist</WillingHands.Accept>
+  <WillingHands.Refuse>Ține-l în sclavie</WillingHands.Refuse>
+  <WillingHands.Joined>{0} a ales să se alăture coloniei.</WillingHands.Joined>
+
+</LanguageData>

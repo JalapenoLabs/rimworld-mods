@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Musi być więźniem kolonii.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Musi być niewzruszenie lojalnym więźniem.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Szansa na złamanie lojalności</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Ceremonia Złamania lojalności jest znów gotowa.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Rozpocznij ceremonię Złamania lojalności na {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Złamać lojalność</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Rozpocznij ceremonię Złamania lojalności na {0}, odprawianą w jego celi. Mówca przemówi do {0} przed publicznością, próbując skruszyć jego niewzruszoną lojalność.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Ceremonia jest na czasie odnowienia. Będzie dostępna za {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lojalność złamana</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lojalność niezłomna</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Coś ustąpiło. Niewzruszone oddanie więźnia pękło i teraz można go zrekrutować.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Ceremonia się nie powiodła. Więzień przywarł do swojej frakcji, bardziej urażony niż wcześniej.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

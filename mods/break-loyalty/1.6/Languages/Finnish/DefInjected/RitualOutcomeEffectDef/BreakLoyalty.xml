@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Rituaalin laatu on todennäköisyys murtaa vangin uskollisuus, enintään 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>puhujan sosiaalinen vaikutus</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>katsojat</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>pettymys ryhmittymään</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>jakaa ideologiasi</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>siteet siirtokuntalaisiin</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>vangin tyytyväisyys</BreakLoyalty.comps.5.label>
+
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Calitatea ritualului este șansa de a frânge loialitatea prizonierului, plafonată la 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>impactul social al vorbitorului</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>spectatori</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>deziluzie față de facțiune</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>împărtășește ideologia ta</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>legături cu coloniștii</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>mulțumirea prizonierului</BreakLoyalty.comps.5.label>
+
+</LanguageData>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>A kolónia foglyának kell lennie.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Rendíthetetlenül hűséges fogolynak kell lennie.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Esély a hűség megtörésére</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>A Hűség megtörése szertartás ismét elérhető.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Hűség megtörése szertartás indítása {0} ellen</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Hűség megtörése</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Hűség megtörése szertartás indítása {0} ellen, a cellájában megtartva. Egy szónok a közönség előtt megpróbálja megtörni {0} rendíthetetlen hűségét.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>A szertartás töltődik. {0} múlva lesz elérhető.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Hűség megtörve</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Hűség rendíthetetlen</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Valami engedett. A fogoly rendíthetetlen elszántsága megrepedt, és most már beszervezhető.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>A szertartás kudarcot vallott. A fogoly a frakciójába kapaszkodott, még neheztelőbben, mint azelőtt.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

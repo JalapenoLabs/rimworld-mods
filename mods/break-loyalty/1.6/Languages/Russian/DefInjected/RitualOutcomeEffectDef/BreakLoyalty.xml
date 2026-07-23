@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Качество ритуала — это шанс сломить верность пленника, но не более 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>социальное влияние оратора</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>зрители</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>разочарование во фракции</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>разделяет вашу идеологию</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>связи с колонистами</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>довольство пленника</BreakLoyalty.comps.5.label>
+
+</LanguageData>

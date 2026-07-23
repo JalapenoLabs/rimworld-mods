@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Якість ритуалу — це шанс зламати вірність в'язня, але не більше ніж 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>соціальний вплив промовця</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>глядачі</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>розчарування у фракції</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>поділяє вашу ідеологію</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>зв'язки з колоністами</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>вдоволеність в'язня</BreakLoyalty.comps.5.label>
+
+</LanguageData>

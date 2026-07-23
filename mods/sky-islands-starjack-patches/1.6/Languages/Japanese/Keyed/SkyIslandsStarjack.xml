@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in a pawn's stat breakdown, shown when the low-gravity penalty
+       is softened on a sky island. -->
+  <SkyIslandsStarjack.OnSkyIsland>天空島にいるとき</SkyIslandsStarjack.OnSkyIsland>
+
+</LanguageData>

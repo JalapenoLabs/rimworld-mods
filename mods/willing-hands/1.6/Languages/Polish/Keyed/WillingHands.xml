@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} chce przynależeć</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Przez czas służby u ciebie {PAWN_labelShort} zaczął(ęła) uważać tę kolonię za dom. Najedzony, spokojny i beztroski, {PAWN_pronoun} nie chce już być niewolnikiem, lecz z własnej woli zostać jednym z was.\n\nCzy przyjmiesz {PAWN_objective} jako kolonistę?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Przyjmij jako kolonistę</WillingHands.Accept>
+  <WillingHands.Refuse>Pozostaw w niewoli</WillingHands.Refuse>
+  <WillingHands.Joined>{0} postanowił(a) dołączyć do kolonii.</WillingHands.Joined>
+
+</LanguageData>

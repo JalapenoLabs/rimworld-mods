@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} desidera appartenere</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Nel tempo trascorso al tuo servizio, {PAWN_labelShort} è arrivato a considerare questa colonia come casa. Ben nutrito, a proprio agio e sereno, {PAWN_pronoun} non desidera più essere uno schiavo, ma restare come uno di voi, di sua spontanea volontà.\n\nAccoglierai {PAWN_objective} come colono?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Accoglilo come colono</WillingHands.Accept>
+  <WillingHands.Refuse>Tienilo in schiavitù</WillingHands.Refuse>
+  <WillingHands.Joined>{0} ha scelto di unirsi alla colonia.</WillingHands.Joined>
+
+</LanguageData>

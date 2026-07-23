@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Musí to byť väzeň kolónie.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Musí to byť neochvejne verný väzeň.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Šanca zlomiť vernosť</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Obrad Zlomiť vernosť je opäť pripravený.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Začať obrad Zlomiť vernosť na {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Zlomiť vernosť</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Začať obrad Zlomiť vernosť na {0}, konaný v jeho cele. Rečník sa prihovorí {0} pred zhromaždeným davom v snahe rozbiť jeho neochvejnú vernosť.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Obrad sa nabíja. Bude dostupný o {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Vernosť zlomená</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Vernosť neotrasená</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Niečo povolilo. Neochvejná oddanosť väzňa praskla a teraz ho možno naverbovať.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Obrad zlyhal. Väzeň sa primkol k svojej frakcii, zatrpknutejší než predtým.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

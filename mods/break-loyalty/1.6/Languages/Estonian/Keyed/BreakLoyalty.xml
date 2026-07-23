@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Peab olema koloonia vang.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Peab olema kõigutamatult lojaalne vang.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Tõenäosus lojaalsus murda</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Lojaalsuse murdmise tseremoonia on taas valmis.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Alusta lojaalsuse murdmise tseremooniat {0} peal</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Murra lojaalsus</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Alusta lojaalsuse murdmise tseremooniat {0} peal, mis peetakse tema kongis. Kõneleja pöördub {0} poole publiku ees, püüdes purustada tema kõigutamatut lojaalsust.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Tseremoonia on taastumas. See on saadaval {0} pärast.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lojaalsus murtud</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lojaalsus kõigutamatu</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Miski andis järele. Vangi kõigutamatu pühendumus pragunes ja teda saab nüüd värvata.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Tseremoonia ebaõnnestus. Vang klammerdus oma fraktsiooni külge, pahuram kui varem.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

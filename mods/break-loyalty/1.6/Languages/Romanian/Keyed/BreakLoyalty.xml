@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Trebuie să fie un prizonier al coloniei.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Trebuie să fie un prizonier neclintit de loial.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Șansa de a frânge loialitatea</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Ceremonia Frângerea loialității este din nou pregătită.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Începe ceremonia Frângerea loialității asupra lui {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Frângerea loialității</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Începe ceremonia Frângerea loialității asupra lui {0}, ținută în celula sa. Un vorbitor i se va adresa lui {0} în fața unei audiențe, încercând să sfărâme loialitatea sa neclintită.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Ceremonia este în așteptare. Va fi disponibilă peste {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Loialitate frântă</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Loialitate neclintită</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Ceva a cedat. Devotamentul neclintit al prizonierului a crăpat, iar acum poate fi recrutat.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Ceremonia a eșuat. Prizonierul s-a agățat de facțiunea sa, mai plin de resentimente decât înainte.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

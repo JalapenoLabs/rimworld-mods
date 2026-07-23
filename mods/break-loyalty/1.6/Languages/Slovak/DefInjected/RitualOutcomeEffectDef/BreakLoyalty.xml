@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Kvalita obradu je šanca zlomiť vernosť väzňa, najviac 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>spoločenský vplyv rečníka</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>diváci</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>rozčarovanie z frakcie</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>zdieľa tvoju ideológiu</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>putá s kolonistami</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>spokojnosť väzňa</BreakLoyalty.comps.5.label>
+
+</LanguageData>

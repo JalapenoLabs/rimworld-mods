@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Ritualens kvalitet är chansen att bryta fångens lojalitet, med ett tak på 25 %.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>talarens sociala genomslag</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>åskådare</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>desillusion med fraktionen</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>delar din ideoligion</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>band till kolonisterna</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>fångens belåtenhet</BreakLoyalty.comps.5.label>
+
+</LanguageData>

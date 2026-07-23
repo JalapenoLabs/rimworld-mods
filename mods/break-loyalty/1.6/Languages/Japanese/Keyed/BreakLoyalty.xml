@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>コロニーの囚人でなければならない。</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>揺るぎない忠誠を持つ囚人でなければならない。</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>忠誠を砕く確率</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>「忠誠を砕く」儀式が再び使用可能になった。</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>{0}に対して「忠誠を砕く」儀式を開始する</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>忠誠を砕く</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>{0}に対して「忠誠を砕く」儀式を、その独房で執り行う。演説者が聴衆の前で{0}に語りかけ、その揺るぎない忠誠を打ち砕こうと試みる。</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>儀式はクールダウン中である。{0}後に使用可能になる。</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>忠誠が砕けた</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>忠誠は揺るがず</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>何かが崩れた。囚人の揺るぎない献身にひびが入り、勧誘できるようになった。</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>儀式は失敗した。囚人は自らの派閥にしがみつき、以前よりも恨みを募らせた。</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

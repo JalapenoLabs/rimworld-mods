@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Rituaali kvaliteet on tõenäosus murda vangi lojaalsus, ülempiiriga 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>kõneleja sotsiaalne mõju</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>pealtvaatajad</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>pettumus fraktsioonis</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>jagab sinu ideoloogiat</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>sidemed kolonistidega</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>vangi rahulolu</BreakLoyalty.comps.5.label>
+
+</LanguageData>

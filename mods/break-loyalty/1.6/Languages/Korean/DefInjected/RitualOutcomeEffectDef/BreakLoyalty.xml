@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>의식의 품질은 포로의 충성심을 무너뜨릴 확률이며, 최대 25%이다.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>연설자의 사회적 영향력</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>관중</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>파벌에 대한 환멸</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>당신의 이념을 공유함</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>정착민과의 유대</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>포로의 만족도</BreakLoyalty.comps.5.label>
+
+</LanguageData>

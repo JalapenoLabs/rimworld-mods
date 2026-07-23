@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Ha de ser un presoner de la colònia.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Ha de ser un presoner de lleialtat inquebrantable.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Probabilitat de trencar la lleialtat</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>La cerimònia de Trencar la Lleialtat torna a estar disponible.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Inicia la cerimònia de Trencar la Lleialtat sobre {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Trencar la lleialtat</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Inicia la cerimònia de Trencar la Lleialtat sobre {0}, feta a la seva cel·la. Un orador s'adreçarà a {0} davant d'una audiència per intentar destrossar la seva lleialtat inquebrantable.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>La cerimònia està en temps de recàrrega. Estarà disponible en {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lleialtat trencada</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lleialtat intacta</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Alguna cosa va cedir. La devoció inquebrantable del presoner es va esquerdar, i ara pot ser reclutat.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>La cerimònia va fracassar. El presoner es va aferrar a la seva facció, més ressentit que abans.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

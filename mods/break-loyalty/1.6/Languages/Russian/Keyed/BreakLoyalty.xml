@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Должен быть пленником колонии.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Должен быть непоколебимо верным пленником.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Шанс сломить верность</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Церемония «Сломить верность» снова готова.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Начать церемонию «Сломить верность» над {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Сломить верность</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Начать церемонию «Сломить верность» над {0}, проводимую в его камере. Оратор обратится к {0} перед публикой, пытаясь сокрушить его непоколебимую верность.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Церемония перезаряжается. Она станет доступна через {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Верность сломлена</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Верность непоколебима</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Что-то надломилось. Непоколебимая преданность пленника дала трещину, и теперь его можно завербовать.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Церемония провалилась. Пленник ещё крепче держится за свою фракцию, более озлобленный, чем прежде.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>La qualité du rituel correspond à la probabilité de briser la loyauté du prisonnier, plafonnée à 25 %.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>impact social de l'orateur</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>spectateurs</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>désillusion envers la faction</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>partage votre idéologion</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>liens avec les colons</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>contentement du prisonnier</BreakLoyalty.comps.5.label>
+
+</LanguageData>

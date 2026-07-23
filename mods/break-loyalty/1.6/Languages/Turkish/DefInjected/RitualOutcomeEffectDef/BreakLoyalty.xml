@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Törenin kalitesi, tutsağın sadakatini kırma şansıdır; en fazla %25.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>konuşmacının sosyal etkisi</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>izleyiciler</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>hizbe karşı hayal kırıklığı</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>ideolojini paylaşıyor</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>kolonicilerle bağlar</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>tutsağın hoşnutluğu</BreakLoyalty.comps.5.label>
+
+</LanguageData>

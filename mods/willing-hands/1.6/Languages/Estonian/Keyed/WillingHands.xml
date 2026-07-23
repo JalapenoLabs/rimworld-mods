@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} soovib kuuluda</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Sinu teenistuses veedetud aja jooksul on {PAWN_labelShort} hakanud seda kolooniat koduks pidama. Hästi toidetud, mugav ja rahulik, ei taha {PAWN_pronoun} enam olla ori, vaid jääda üheks teie hulgast, omal vabal tahtel.\n\nKas võtad {PAWN_objective} kolonistina vastu?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Võta kolonistina vastu</WillingHands.Accept>
+  <WillingHands.Refuse>Jäta orjaks</WillingHands.Refuse>
+  <WillingHands.Joined>{0} on otsustanud kolooniaga liituda.</WillingHands.Joined>
+
+</LanguageData>

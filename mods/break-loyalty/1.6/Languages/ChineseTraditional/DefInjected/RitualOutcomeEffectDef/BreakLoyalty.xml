@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>儀式品質即為瓦解囚犯忠誠的機率，上限為25%。</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>演講者的社交影響力</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>觀眾</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>對派系的幻滅</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>與你共享信仰</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>與殖民者的羈絆</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>囚犯的滿足感</BreakLoyalty.comps.5.label>
+
+</LanguageData>

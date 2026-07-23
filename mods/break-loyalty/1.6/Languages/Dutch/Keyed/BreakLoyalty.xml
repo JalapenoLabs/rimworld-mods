@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Moet een gevangene van de kolonie zijn.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Moet een onwankelbaar loyale gevangene zijn.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Kans om loyaliteit te breken</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>De ceremonie Loyaliteit breken is weer beschikbaar.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Begin de ceremonie Loyaliteit breken op {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Loyaliteit breken</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Begin de ceremonie Loyaliteit breken op {0}, gehouden in hun cel. Een spreker zal zich tot {0} richten voor een publiek in een poging hun onwankelbare loyaliteit te verbrijzelen.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>De ceremonie heeft afkoeltijd. Ze is beschikbaar over {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Loyaliteit gebroken</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Loyaliteit onwankelbaar</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Er brak iets. De onwankelbare toewijding van de gevangene kreeg een barst, en hij kan nu worden gerekruteerd.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>De ceremonie mislukte. De gevangene klampte zich vast aan zijn factie, wrokkiger dan voorheen.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

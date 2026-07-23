@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Kvalita obřadu je šance zlomit věrnost vězně, nejvýše 25 %.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>společenský vliv řečníka</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>diváci</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>rozčarování z frakce</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>sdílí tvou ideologii</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>pouta s kolonisty</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>spokojenost vězně</BreakLoyalty.comps.5.label>
+
+</LanguageData>

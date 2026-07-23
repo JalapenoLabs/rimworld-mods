@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>A szertartás minősége a fogoly hűsége megtörésének esélye, legfeljebb 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>a szónok társas hatása</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>nézők</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>kiábrándultság a frakcióból</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>osztozik az ideológiádon</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>kötelékek a telepesekkel</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>a fogoly elégedettsége</BreakLoyalty.comps.5.label>
+
+</LanguageData>

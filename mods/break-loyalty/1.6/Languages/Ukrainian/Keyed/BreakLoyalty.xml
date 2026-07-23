@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Має бути в'язнем колонії.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Має бути непохитно вірним в'язнем.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Шанс зламати вірність</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Церемонія «Зламати вірність» знову готова.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Почати церемонію «Зламати вірність» над {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Зламати вірність</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Почати церемонію «Зламати вірність» над {0}, що проводиться в його камері. Промовець звернеться до {0} перед публікою, намагаючись розтрощити його непохитну вірність.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Церемонія перезаряджається. Вона стане доступною через {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Вірність зламано</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Вірність непохитна</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Щось надломилося. Непохитна відданість в'язня дала тріщину, і тепер його можна завербувати.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Церемонія провалилася. В'язень ще міцніше вчепився у свою фракцію, більш озлоблений, ніж раніше.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

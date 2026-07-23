@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>Η ποιότητα της τελετής είναι η πιθανότητα να σπάσει η πίστη του αιχμαλώτου, με ανώτατο όριο 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>κοινωνική επιρροή του ομιλητή</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>θεατές</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>απογοήτευση από την παράταξη</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>μοιράζεται την ιδεολογία σου</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>δεσμοί με τους αποίκους</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>ικανοποίηση του αιχμαλώτου</BreakLoyalty.comps.5.label>
+
+</LanguageData>

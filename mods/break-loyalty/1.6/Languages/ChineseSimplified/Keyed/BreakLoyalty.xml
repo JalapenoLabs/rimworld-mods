@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>必须是殖民地的囚犯。</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>必须是坚定不移地忠诚的囚犯。</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>瓦解忠诚的几率</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>瓦解忠诚仪式已再次就绪。</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>对{0}开始瓦解忠诚仪式</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>瓦解忠诚</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>对{0}开始瓦解忠诚仪式，在其牢房中举行。一名演讲者将当众向{0}发表讲话，试图击碎其坚定不移的忠诚。</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>仪式正在冷却中。将在{0}后可用。</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>忠诚已瓦解</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>忠诚未动摇</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>有什么东西崩塌了。囚犯坚定不移的忠诚出现了裂痕，现在可以招募他们了。</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>仪式失败了。囚犯紧紧依附于自己的派系，比以前更加怨恨。</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

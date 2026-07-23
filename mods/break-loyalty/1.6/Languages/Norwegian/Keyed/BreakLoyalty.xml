@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Må være en fange i kolonien.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Må være en urokkelig lojal fange.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Sjanse for å bryte lojalitet</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Bryt lojalitet-seremonien er klar igjen.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Start Bryt lojalitet-seremonien på {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Bryt lojalitet</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Start Bryt lojalitet-seremonien på {0}, holdt i cellen hans. En taler vil henvende seg til {0} foran et publikum i et forsøk på å knuse hans urokkelige lojalitet.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Seremonien er på nedkjøling. Den blir tilgjengelig om {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Lojalitet brutt</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Lojalitet urokket</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Noe ga etter. Fangens urokkelige hengivenhet slo sprekker, og han kan nå rekrutteres.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Seremonien mislyktes. Fangen klamret seg til fraksjonen sin, mer full av nag enn før.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

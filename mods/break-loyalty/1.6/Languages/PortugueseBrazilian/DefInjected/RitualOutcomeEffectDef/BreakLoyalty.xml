@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>A qualidade do ritual é a chance de quebrar a lealdade do prisioneiro, limitada a 25%.</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>impacto social do orador</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>espectadores</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>desilusão com a facção</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>compartilha sua ideoligião</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>laços com os colonos</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>contentamento do prisioneiro</BreakLoyalty.comps.5.label>
+
+</LanguageData>

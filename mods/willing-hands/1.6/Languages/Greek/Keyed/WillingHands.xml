@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort}: θέλει να ανήκει</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Στον καιρό που πέρασε στην υπηρεσία σου, {PAWN_labelShort} κατέληξε να βλέπει αυτήν την αποικία ως σπίτι. Καλοταϊσμένος, άνετος και ήρεμος, {PAWN_pronoun} δεν θέλει πια να είναι σκλάβος, αλλά να μείνει ως ένας από εσάς, με τη θέλησή του.\n\nΘα δεχτείς {PAWN_objective} ως άποικο;</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Δέξου τον ως άποικο</WillingHands.Accept>
+  <WillingHands.Refuse>Κράτησέ τον σκλάβο</WillingHands.Refuse>
+  <WillingHands.Joined>{0} επέλεξε να ενταχθεί στην αποικία.</WillingHands.Joined>
+
+</LanguageData>

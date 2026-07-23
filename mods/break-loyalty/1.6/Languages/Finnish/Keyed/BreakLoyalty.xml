@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Täytyy olla siirtokunnan vanki.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Täytyy olla järkkymättömän uskollinen vanki.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Todennäköisyys murtaa uskollisuus</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Uskollisuuden murtamisseremonia on taas valmis.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Aloita uskollisuuden murtamisseremonia kohteelle {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Murra uskollisuus</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Aloita uskollisuuden murtamisseremonia kohteelle {0}, pidettynä hänen sellissään. Puhuja puhuttelee kohdetta {0} yleisön edessä yrittäen murskata hänen järkkymättömän uskollisuutensa.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Seremonia on jäähtymässä. Se on käytettävissä {0} kuluttua.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Uskollisuus murrettu</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Uskollisuus järkkymätön</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Jokin petti. Vangin järkkymätön omistautuminen halkesi, ja hänet voidaan nyt värvätä.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Seremonia epäonnistui. Vanki takertui ryhmittymäänsä, katkerampana kuin ennen.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

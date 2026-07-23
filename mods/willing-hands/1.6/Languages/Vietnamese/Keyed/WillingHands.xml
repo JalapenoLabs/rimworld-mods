@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} mong muốn được thuộc về</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Trong thời gian phục vụ cho bạn, {PAWN_labelShort} đã dần xem thuộc địa này như nhà của mình. Được ăn no, thoải mái và yên ổn, {PAWN_pronoun} không còn muốn làm nô lệ nữa, mà muốn ở lại như một người trong các bạn, theo ý nguyện của chính mình.\n\nBạn có đón nhận {PAWN_objective} làm cư dân không?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Đón nhận làm cư dân</WillingHands.Accept>
+  <WillingHands.Refuse>Giữ lại làm nô lệ</WillingHands.Refuse>
+  <WillingHands.Joined>{0} đã chọn gia nhập thuộc địa.</WillingHands.Joined>
+
+</LanguageData>

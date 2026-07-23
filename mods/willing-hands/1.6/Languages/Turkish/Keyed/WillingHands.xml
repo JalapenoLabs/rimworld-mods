@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} aranıza katılmak istiyor</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Hizmetinde geçirdiği süre boyunca {PAWN_labelShort} bu koloniyi yuvası gibi görmeye başladı. Karnı tok, rahat ve huzurlu olan {PAWN_pronoun} artık köle olmak istemiyor; kendi özgür iradesiyle sizden biri olarak kalmak istiyor.\n\n{PAWN_objective} bir kolonici olarak aranıza alacak mısın?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Kolonici olarak kabul et</WillingHands.Accept>
+  <WillingHands.Refuse>Köle olarak tut</WillingHands.Refuse>
+  <WillingHands.Joined>{0} koloniye katılmayı seçti.</WillingHands.Joined>
+
+</LanguageData>

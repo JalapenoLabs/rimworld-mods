@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <WillingHands.JoinRequest.Label>{PAWN_labelShort} haluaa kuulua joukkoon</WillingHands.JoinRequest.Label>
+  <WillingHands.JoinRequest.Text>Palveluksessasi viettämänsä ajan aikana {PAWN_labelShort} on alkanut pitää tätä siirtokuntaa kotinaan. Hyvin ruokittuna, mukavasti ja levollisena {PAWN_pronoun} ei enää halua olla orja, vaan jäädä yhdeksi teistä omasta tahdostaan.\n\nToivotatko {PAWN_objective} tervetulleeksi siirtolaisena?</WillingHands.JoinRequest.Text>
+
+  <WillingHands.Accept>Toivota tervetulleeksi siirtolaisena</WillingHands.Accept>
+  <WillingHands.Refuse>Pidä orjana</WillingHands.Refuse>
+  <WillingHands.Joined>{0} on päättänyt liittyä siirtokuntaan.</WillingHands.Joined>
+
+</LanguageData>

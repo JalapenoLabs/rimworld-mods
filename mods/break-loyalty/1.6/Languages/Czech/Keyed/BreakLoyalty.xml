@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.RoleReason.MustBePrisoner>Musí to být vězeň kolonie.</BreakLoyalty.RoleReason.MustBePrisoner>
+  <BreakLoyalty.RoleReason.MustBeUnwavering>Musí to být neochvějně věrný vězeň.</BreakLoyalty.RoleReason.MustBeUnwavering>
+  <BreakLoyalty.ChanceLabel>Šance zlomit věrnost</BreakLoyalty.ChanceLabel>
+  <BreakLoyalty.CooldownReady>Obřad Zlomit věrnost je opět připraven.</BreakLoyalty.CooldownReady>
+  <BreakLoyalty.FloatMenu.Begin>Zahájit obřad Zlomit věrnost na {0}</BreakLoyalty.FloatMenu.Begin>
+  <BreakLoyalty.Gizmo.Label>Zlomit věrnost</BreakLoyalty.Gizmo.Label>
+  <BreakLoyalty.Gizmo.Desc>Zahájit obřad Zlomit věrnost na {0}, konaný v jeho cele. Řečník osloví {0} před shromážděným davem ve snaze rozbít jeho neochvějnou věrnost.</BreakLoyalty.Gizmo.Desc>
+  <BreakLoyalty.Gizmo.OnCooldown>Obřad se dobíjí. Bude k dispozici za {0}.</BreakLoyalty.Gizmo.OnCooldown>
+  <BreakLoyalty.OutcomeLetter.Success>Věrnost zlomena</BreakLoyalty.OutcomeLetter.Success>
+  <BreakLoyalty.OutcomeLetter.Failure>Věrnost neotřesena</BreakLoyalty.OutcomeLetter.Failure>
+  <BreakLoyalty.Outcome.Success>Něco povolilo. Neochvějná oddanost vězně se roztříštila a nyní ho lze naverbovat.</BreakLoyalty.Outcome.Success>
+  <BreakLoyalty.Outcome.Failure>Obřad selhal. Vězeň se přimkl ke své frakci, zatrpklejší než předtím.</BreakLoyalty.Outcome.Failure>
+
+</LanguageData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BreakLoyalty.description>儀式の質は囚人の忠誠を砕く確率であり、上限は25%である。</BreakLoyalty.description>
+  <BreakLoyalty.comps.0.label>演説者の社会的影響力</BreakLoyalty.comps.0.label>
+  <BreakLoyalty.comps.1.label>観衆</BreakLoyalty.comps.1.label>
+  <BreakLoyalty.comps.2.label>派閥への幻滅</BreakLoyalty.comps.2.label>
+  <BreakLoyalty.comps.3.label>あなたの理念を共有している</BreakLoyalty.comps.3.label>
+  <BreakLoyalty.comps.4.label>入植者との絆</BreakLoyalty.comps.4.label>
+  <BreakLoyalty.comps.5.label>囚人の満足度</BreakLoyalty.comps.5.label>
+
+</LanguageData>
