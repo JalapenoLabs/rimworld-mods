@@ -264,6 +264,10 @@ The 29 language folder names are exact RimWorld identifiers (e.g. `ChineseSimpli
   configs in a release.
 - **`dev.log`** — local test output written by `/test-mod`. Gitignored. Never commit it.
 - **`legacy/`** — archived, do not depend on or modify these files.
+- **Source art** — each mod keeps raw art in `mods/<mod>/Art/` (outside the release set), authored with the
+  global `/sprite-art` skill: SVG sources in `Art/assets/<thing>/`, plus `style-guide.md` and `queue.md`. Only
+  exported PNGs go in `Textures/`. `Art/references/`, `Art/style-samples/` and `Art/review/` hold copyrighted or
+  regenerable images and are gitignored.
 
 ---
 
