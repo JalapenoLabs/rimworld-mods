@@ -267,7 +267,8 @@ The 29 language folder names are exact RimWorld identifiers (e.g. `ChineseSimpli
 - **Source art** — each mod keeps raw art in `mods/<mod>/Art/` (outside the release set), authored with the
   global `/sprite-art` skill: SVG sources in `Art/assets/<thing>/`, plus `style-guide.md` and `queue.md`. Only
   exported PNGs go in `Textures/`. `Art/references/`, `Art/style-samples/` and `Art/review/` hold copyrighted or
-  regenerable images and are gitignored.
+  regenerable images, ignored by a nested `Art/.gitignore`. The mod's root `.gitignore` must stay identical to
+  `.github/templates/mod.gitignore`; CI's structure check enforces it.
 
 ---
 
