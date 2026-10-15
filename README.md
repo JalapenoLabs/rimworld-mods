@@ -13,6 +13,7 @@ the root so individual mod repos stay lean.
 | [fishing-is-fun](mods/fishing-is-fun) | Makes Odyssey fishing count as recreation and grants a mood buff after a long session | [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3538562620) |
 | [electricity-meter](mods/electricity-meter) | Researchable building that shows a full power breakdown for any grid | [Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3542488017) |
 | [project-zero-dawn](mods/project-zero-dawn) | Horizon Zero Dawn–inspired mechs, factions, cosmetics, and events *(alpha)* | — |
+| [synced-storyteller](mods/synced-storyteller) | Seeds the storyteller from the world seed so two games get the same events on the same days | — |
 
 ---
 

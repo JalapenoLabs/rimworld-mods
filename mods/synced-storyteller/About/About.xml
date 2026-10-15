@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+  <name>Synced Storyteller</name>
+  <author>JalapenoLabs</author>
+  <modVersion>2026.9.28</modVersion>
+
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+  </loadAfter>
+
+  <packageId>jalapenolabs.rimworld.syncedstoryteller</packageId>
+  <url>https://github.com/JalapenoLabs/rimworld-mods</url>
+  <description>Play the same story as a friend. With this mod, two games started from the same world seed get the same storyteller events on the same days, no matter how differently each colony is run.
+
+Normally a single random stream drives everything in RimWorld, from pawn AI to combat to the storyteller, so two identical starts drift apart within minutes. Synced Storyteller gives the storyteller its own seeded dice for deciding what happens and for executing it. Raids, visitors, traders, disasters, and quests line up by date.
+
+What stays different: threat size still scales with each colony's wealth and population, an event that needs something one colony lacks (a prisoner, nearby animals) is skipped for that colony, and events weighted by colonist count shift as the colonies grow apart.
+
+To stay in sync, both players need the same mod list and load order, the same seed, scenario, starting tile, storyteller, and difficulty.
+
+Turn on dev mode to log every event with its tick, so you can compare logs afterwards.</description>
+</ModMetaData>

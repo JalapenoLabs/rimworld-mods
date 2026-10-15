@@ -1,0 +1,3 @@
+# Changelog
+
+2026.9.28 - Initial release. The storyteller rolls on seeded dice derived from the world seed, the tick, and the incident target, so games started from the same seed get the same events on the same days. Both incident selection and execution are seeded. Dev mode logs every fire for side-by-side comparison.
