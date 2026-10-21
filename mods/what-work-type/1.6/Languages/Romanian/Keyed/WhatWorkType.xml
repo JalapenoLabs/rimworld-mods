@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Tip de muncă</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Coloana din fila Muncă pe care coloniștii o folosesc pentru a opera această clădire. Mărește prioritatea acelui tip de muncă pentru ca ea să fie folosită; abilitatea decide cât de bine o fac.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (abilitate: {2}). Poziția {3} din {4} printre sarcinile de {1}.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>niciuna</WhatWorkType.NoSkill>
+
+</LanguageData>

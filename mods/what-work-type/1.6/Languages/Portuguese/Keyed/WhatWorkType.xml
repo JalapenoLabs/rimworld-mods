@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Tipo de trabalho</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>A coluna do separador Trabalho que os colonos usam para operar este edifício. Aumente a prioridade desse tipo de trabalho para que seja usado; a perícia decide o quão bem o fazem.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (perícia: {2}). Posição {3} de {4} entre as tarefas de {1}.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>nenhuma</WhatWorkType.NoSkill>
+
+</LanguageData>

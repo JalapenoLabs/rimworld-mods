@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>工作类型</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>殖民者操作此建筑时所用的工作标签页栏目。提高该工作类型的优先级，殖民者才会使用它；技能决定他们做得多好。</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}：{1}（技能：{2}）。在{1}的{4}项工作中排第{3}位。</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>无</WhatWorkType.NoSkill>
+
+</LanguageData>

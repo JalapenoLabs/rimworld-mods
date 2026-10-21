@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Τύπος εργασίας</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Η στήλη της καρτέλας Εργασία που χρησιμοποιούν οι άποικοι για να λειτουργήσουν αυτό το κτίριο. Αυξήστε την προτεραιότητα αυτού του τύπου εργασίας για να χρησιμοποιηθεί· η δεξιότητα καθορίζει πόσο καλά το κάνουν.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (δεξιότητα: {2}). Σειρά {3} από {4} στις εργασίες {1}.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>καμία</WhatWorkType.NoSkill>
+
+</LanguageData>

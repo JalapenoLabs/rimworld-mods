@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Werktype</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>De kolom op het tabblad Werk die kolonisten gebruiken om dit gebouw te bedienen. Verhoog de prioriteit van dat werktype om het te laten gebruiken; de vaardigheid bepaalt hoe goed ze het doen.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (vaardigheid: {2}). Nummer {3} van {4} binnen {1}-taken.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>geen</WhatWorkType.NoSkill>
+
+</LanguageData>

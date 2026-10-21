@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Työtyyppi</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Työ-välilehden sarake, jonka kautta siirtolaiset käyttävät tätä rakennusta. Nosta kyseisen työtyypin prioriteettia, jotta rakennusta käytetään; taito ratkaisee, kuinka hyvin he sen tekevät.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (taito: {2}). Järjestyksessä {3}/{4} työtyypin {1} töistä.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>ei mitään</WhatWorkType.NoSkill>
+
+</LanguageData>

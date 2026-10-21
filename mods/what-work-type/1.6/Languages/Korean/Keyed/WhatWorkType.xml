@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>작업 유형</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>정착민이 이 건물을 운영할 때 쓰는 작업 탭의 열입니다. 해당 작업 유형의 우선순위를 높이면 건물이 사용되며, 기술이 작업을 얼마나 잘하는지 결정합니다.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (기술: {2}). {1} 작업 {4}개 중 {3}번째로 수행됩니다.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>없음</WhatWorkType.NoSkill>
+
+</LanguageData>

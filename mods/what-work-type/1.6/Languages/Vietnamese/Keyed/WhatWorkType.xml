@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Loại công việc</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Cột trong thẻ Công việc mà người khai hoang dùng để vận hành công trình này. Hãy tăng mức ưu tiên của loại công việc đó để công trình được sử dụng; kỹ năng quyết định họ làm tốt đến đâu.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (kỹ năng: {2}). Thứ tự {3} trên {4} trong các việc {1}.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>không có</WhatWorkType.NoSkill>
+
+</LanguageData>

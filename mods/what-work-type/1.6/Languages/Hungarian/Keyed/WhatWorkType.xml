@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Munkatípus</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>A Munka fül oszlopa, amellyel a telepesek ezt az épületet kezelik. Emeld ennek a munkatípusnak a prioritását, hogy használják; a képesség dönti el, milyen jól csinálják.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (képesség: {2}). Sorrend: {3}/{4} a(z) {1} feladatai között.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>nincs</WhatWorkType.NoSkill>
+
+</LanguageData>

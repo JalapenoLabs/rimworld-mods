@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Töö liik</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Töö vahekaardi veerg, mille kaudu kolonistid seda hoonet kasutavad. Tõsta selle töö liigi prioriteeti, et hoonet kasutataks; oskus määrab, kui hästi nad sellega hakkama saavad.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (oskus: {2}). Järjekorras {3}/{4} töö liigi {1} ülesannete seas.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>puudub</WhatWorkType.NoSkill>
+
+</LanguageData>

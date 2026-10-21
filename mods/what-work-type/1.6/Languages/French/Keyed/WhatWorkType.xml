@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Type de travail</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>La colonne de l'onglet Travail que les colons utilisent pour faire fonctionner ce bâtiment. Augmentez la priorité de ce type de travail pour qu'il soit utilisé ; la compétence détermine leur efficacité.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0} : {1} (compétence : {2}). Rang {3} sur {4} parmi les tâches de {1}.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>aucune</WhatWorkType.NoSkill>
+
+</LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Arbetstyp</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Kolumnen under fliken Arbete som kolonisterna använder för att sköta den här byggnaden. Höj den arbetstypens prioritet för att få den använd; färdigheten avgör hur bra de gör det.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (färdighet: {2}). Nummer {3} av {4} bland {1}-uppgifter.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>ingen</WhatWorkType.NoSkill>
+
+</LanguageData>

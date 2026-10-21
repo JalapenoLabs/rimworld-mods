@@ -13,9 +13,10 @@ conventions, and constraints you must understand before making changes.
 ## What this repository is
 
 A monorepo that centralises build infrastructure, CI/CD, and AI-assisted developer workflows
-for multiple RimWorld mods maintained by JalapenoLabs. Each mod lives in its own public GitHub
-repo and is included here as a git submodule under `mods/`. The root provides the shared
-tooling that individual mod repos do not need to carry themselves.
+for multiple RimWorld mods maintained by JalapenoLabs. Every mod lives under `mods/<mod-name>/`.
+A few are git submodules pointing at their own public GitHub repos; the rest, including every
+new mod, live in-tree in this repo. The root provides the shared tooling that individual mods
+do not need to carry themselves.
 
 ---
 
@@ -23,7 +24,7 @@ tooling that individual mod repos do not need to carry themselves.
 
 ```
 rimworld-mods/
-├── mods/<mod-name>/           # git submodule for each mod
+├── mods/<mod-name>/           # one folder per mod (in-tree, or a git submodule)
 ├── RimworldForCICD/           # git submodule — managed DLLs for building
 ├── binaries/                  # committed third-party libraries
 ├── .claude/skills/            # Claude Code slash commands
@@ -37,14 +38,16 @@ rimworld-mods/
 
 ## Submodule model
 
-Every mod is a standalone public git repository added as a submodule. The submodule pointer
-in the monorepo records a specific commit — updates require a commit to the monorepo after
-pushing to the mod repo.
+New mods are created in-tree under `mods/` and committed directly to this repo; they need no
+separate GitHub repo. The mods listed below are the exception: standalone public repositories
+added as submodules. Each submodule pointer records a specific commit, so updating one needs
+a monorepo commit after pushing to the mod repo.
 
 **Current submodules** (see `.gitmodules`):
 - `mods/electricity-meter` → `github.com:JalapenoLabs/rimworld-electricity-meter`
 - `mods/fishing-is-fun` → `github.com:JalapenoLabs/rimworld-fishing-is-fun`
 - `mods/project-zero-dawn` → `github.com:JalapenoLabs/rimworld-project-zero-dawn`
+- `mods/lava-power-pumps` → `github.com:JalapenoLabs/rimworld-lava-power-pumps`
 - `RimworldForCICD` → `github.com:JalapenoLabs/RimworldForCICD`
 
 All submodule URLs use SSH (`git@github.com:`). The CI secret `SSH_PRIVATE_KEY` is required
@@ -151,9 +154,9 @@ All steps use `continue-on-error: true` with `if:` dependency conditions so ever
 always runs and is reported.
 
 ### `main.yml`
-Triggers on push to `main`, pull requests, and `workflow_dispatch`. Calls
-`callable-build-mod.yml` in a matrix — one entry per mod with its target version. Adding
-a new mod requires adding a `{ mod: <name>, version: '1.6' }` entry to the `include:` list.
+Triggers on push to `main`, pull requests, and `workflow_dispatch`. A `discover` job lists
+every folder under `mods/` and feeds it to `callable-build-mod.yml` as a matrix, all at
+version `1.6`. A new mod folder is picked up with no workflow edit.
 
 ### `release.yml`
 `workflow_dispatch` only. Inputs: `mod`, `version`. Two jobs:
@@ -274,13 +277,15 @@ The 29 language folder names are exact RimWorld identifiers (e.g. `ChineseSimpli
 
 ## Adding a new mod
 
-1. Add the submodule:
-   ```shell
-   git submodule add git@github.com:JalapenoLabs/rimworld-<mod>.git mods/<mod>
-   ```
-2. Ensure the mod has `mod.csproj` at its root with `EnableDefaultCompileItems=false` and
-   correct paths for `OutputPath`, `Compile Include`, and `Reference` to
-   `../../RimworldForCICD/Managed/`.
-3. Add `{ mod: <name>, version: '1.6' }` to the `include:` matrix in
-   `.github/workflows/main.yml`.
-4. Commit `.gitmodules` and the new submodule pointer, push.
+1. Create `mods/<mod>/` in-tree. Copy the shape of a recent mod such as
+   `mods/what-work-type/`.
+2. Give it everything `.github/scripts/validate-mod.sh` requires: `mod.csproj`, `README.md`,
+   `Changelog.txt`, `LICENSE`, `About/About.xml`, `About/Manifest.xml`, `About/Preview.png`,
+   an `.editorconfig` identical to the root one, and a `.gitignore` identical to
+   `.github/templates/mod.gitignore`.
+3. `mod.csproj` sits at the mod root with `EnableDefaultCompileItems=false` and correct paths
+   for `OutputPath`, `Compile Include`, and `Reference` to `../../RimworldForCICD/Managed/`.
+   Mods that patch with Harmony reference `../../binaries/0Harmony.dll` and declare
+   `brrainz.harmony` in `About.xml`.
+4. Build, commit the compiled DLL in `1.6/Assemblies/`, and push. CI discovers the new folder
+   on its own.

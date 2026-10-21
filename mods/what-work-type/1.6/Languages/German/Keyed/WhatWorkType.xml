@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Arbeitsart</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Die Spalte im Arbeit-Tab, über die Kolonisten dieses Gebäude bedienen. Erhöhe die Priorität dieser Arbeitsart, damit es genutzt wird; die Fertigkeit bestimmt, wie gut sie es tun.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (Fertigkeit: {2}). Rang {3} von {4} unter den {1}-Aufgaben.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>keine</WhatWorkType.NoSkill>
+
+</LanguageData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Tipus de feina</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>La columna de la pestanya Treball que els colons fan servir per operar aquest edifici. Augmenta la prioritat d'aquest tipus de feina perquè el facin servir; l'habilitat decideix com de bé ho fan.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (habilitat: {2}). Ordre {3} de {4} entre les feines de {1}.</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>cap</WhatWorkType.NoSkill>
+
+</LanguageData>

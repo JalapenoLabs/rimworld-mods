@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!-- Row label in the Building section of the info card. -->
+  <WhatWorkType.Label>Вид работы</WhatWorkType.Label>
+
+  <!-- Hover text heading, explaining what the row means. -->
+  <WhatWorkType.Desc>Столбец на вкладке «Работа», через который колонисты обслуживают это здание. Повысьте приоритет этого вида работы, чтобы здание использовалось; навык определяет, насколько хорошо они справляются.</WhatWorkType.Desc>
+
+  <!-- One line per job. {0} job name, {1} work type, {2} skills, {3} this job's rank, {4} jobs in the work type. -->
+  <WhatWorkType.Job>{0}: {1} (навык: {2}). Очерёдность {3} из {4} среди работ вида «{1}».</WhatWorkType.Job>
+
+  <!-- Stands in for the skill list on work types that train no skill, such as hauling. -->
+  <WhatWorkType.NoSkill>нет</WhatWorkType.NoSkill>
+
+</LanguageData>

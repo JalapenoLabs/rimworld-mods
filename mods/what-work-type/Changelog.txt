@@ -1,0 +1,3 @@
+# Changelog
+
+2026.10.21 - Initial release. Building info cards gain a "Work type" row naming the Work tab column that operates the building, with each job's skill and rank on hover. Derived from each job's own target declarations, so modded buildings and jobs work without patches.
