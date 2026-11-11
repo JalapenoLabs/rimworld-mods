@@ -18,7 +18,7 @@ on:
 jobs:
   discover:
     name: Discover mods
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       matrix: ${{ steps.scan.outputs.matrix }}
     steps:
