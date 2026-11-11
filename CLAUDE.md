@@ -155,8 +155,11 @@ always runs and is reported.
 
 ### `main.yml`
 Triggers on push to `main`, pull requests, and `workflow_dispatch`. A `discover` job lists
-every folder under `mods/` and feeds it to `callable-build-mod.yml` as a matrix, all at
-version `1.6`. A new mod folder is picked up with no workflow edit.
+every buildable mod under `mods/` and feeds it to `callable-build-mod.yml` as a matrix, all
+at version `1.6`. A folder is buildable when it holds a `mod.csproj` (the rule Mage's
+`BuildAll` uses) or is a submodule, whose contents only the build job checks out. Any other
+folder, such as design notes for a mod not started yet, is skipped with a notice. A new mod
+is picked up with no workflow edit once its `mod.csproj` exists.
 
 ### `release.yml`
 `workflow_dispatch` only. Inputs: `mod`, `version`. Two jobs:
@@ -288,4 +291,4 @@ The 29 language folder names are exact RimWorld identifiers (e.g. `ChineseSimpli
    Mods that patch with Harmony reference `../../binaries/0Harmony.dll` and declare
    `brrainz.harmony` in `About.xml`.
 4. Build, commit the compiled DLL in `1.6/Assemblies/`, and push. CI discovers the new folder
-   on its own.
+   on its own once it has a `mod.csproj`; a folder holding only notes is skipped until then.

@@ -1,0 +1,3 @@
+# Changelog
+
+Unreleased - Mod skeleton: About metadata, the project file, and the 1.6 folder layout. No gameplay content yet; the design is in PLAN.md.

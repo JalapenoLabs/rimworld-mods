@@ -1,7 +1,8 @@
 # Root CI: builds and validates every mod in the monorepo.
 #
 # A prior "discover" job scans mods/ and emits the matrix dynamically, so
-# adding a new mod folder is all that's needed — no workflow edits required.
+# adding a mod folder with a mod.csproj is all that's needed — no workflow
+# edits required.
 
 name: RimWorld Mods CI
 
@@ -24,12 +25,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Emit a JSON array of {mod, version} objects — one entry per subdirectory
-      # of mods/. All mods target 1.6; extend here if per-mod versions are needed.
+      # Emit a JSON array of {mod, version} objects, one per buildable mod: a
+      # folder with a mod.csproj, the rule Mage's BuildAll uses. Submodule mods
+      # count too, because this job checks out without submodules and sees their
+      # folders empty; the build job checks them out. A folder that is neither,
+      # such as design notes for a mod not started yet, is skipped with a notice
+      # rather than failing every build. All mods target 1.6; extend here if
+      # per-mod versions are needed.
       - name: Scan mods/ directory
         id: scan
         run: |
-          matrix=$(ls mods/ | jq -R '{"mod": ., "version": "1.6"}' | jq -sc '.')
+          submodule_paths=$(git config --file .gitmodules --get-regexp '^submodule\..*\.path$' | awk '{ print $2 }')
+          buildable_mods=()
+          for mod_directory in mods/*/; do
+            mod_path="${mod_directory%/}"
+            mod_name="$(basename "$mod_path")"
+            if [ -f "$mod_path/mod.csproj" ] || grep -qx "$mod_path" <<< "$submodule_paths"; then
+              buildable_mods+=("$mod_name")
+            else
+              echo "::notice title=Skipped $mod_path::No mod.csproj yet, so there is nothing to build or validate."
+            fi
+          done
+          matrix=$(printf '%s\n' "${buildable_mods[@]}" | jq -R '{"mod": ., "version": "1.6"}' | jq -sc '.')
           echo "matrix=$matrix" >> "$GITHUB_OUTPUT"
 
   build:
